@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="M_Adnan">
+<title>Micrometer - PrecisionTech</title>
+
+<!-- SLIDER REVOLUTION 4.x CSS SETTINGS -->
+<link rel="stylesheet" type="text/css" href="rs-plugin/css/settings.css" media="screen" />
+
+<!-- Bootstrap Core CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Custom CSS -->
+<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href="css/ionicons.min.css" rel="stylesheet">
+<link href="css/main.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<link href="css/responsive.css" rel="stylesheet">
+
+<!-- JavaScripts -->
+<script src="js/modernizr.js"></script>
+
+<!-- Online Fonts -->
+<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900' rel='stylesheet' type='text/css'>
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+</head>
+
+<body>
+<!-- ====== HEADER ====== -->
+<header class="site-header">
+  <div class="fixed-header">
+    <div class="container">
+
+      <!-- Logo -->
+      <div class="logo">
+        <a href="index.html">
+          <img class="img-responsive" src="images/logo.png" alt="Company Logo">
+        </a>
+      </div>
+
+      <!-- Navigation -->
+      <nav class="navbar ownmenu">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-open-btn" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"><i class="fa fa-navicon"></i></span>
+          </button>
+        </div>
+
+        <!-- NAVIGATION LINKS -->
+        <div class="collapse navbar-collapse" id="nav-open-btn">
+          <ul class="nav navbar-nav navbar-right">
+
+            <!-- Home -->
+            <li><a href="index.html">Home</a></li>
+
+            <!-- Products Dropdown -->
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                Products <b class="caret"></b>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="shop_01.html">Measurement Tools</a></li>
+                <li><a href="shop_02.html">Precision Instruments</a></li>
+                <li><a href="shop_03.html">Calibration Equipment</a></li>
+                <li><a href="shop_04.html">Testing Devices</a></li>
+              </ul>
+            </li>
+
+            <!-- Applications Dropdown -->
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                Applications <b class="caret"></b>
+              </a>
+              <ul class="dropdown-menu">
+                  <li><a href="blog-list_01.html">Manufacturing</a></li>
+                  <li><a href="blog-list_02.html">Quality Control</a></li>
+                  <li><a href="blog-list_03.html">Inspection Services</a></li>
+              </ul>
+            </li>
+
+            <!-- Resources Dropdown -->
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                Resources <b class="caret"></b>
+              </a>
+              <ul class="dropdown-menu">
+                  <li><a href="about-us_01.html">Company Info</a></li>
+                  <li><a href="about-us_02.html">Technical Support</a></li>
+                  <li><a href="contact.html">Contact Sales</a></li>
+              </ul>
+            </li>
+
+            <!-- News -->
+              <li><a href="news.html">News</a></li>
+
+              <!-- About -->
+              <li><a href="about.html">About</a></li>
+
+          </ul>
+        </div>
+      </nav>
+
+    </div>
+  </div>
+</header>
+
+<!-- ====== FIXED HEADER STYLING ====== -->
+<style>
+/* Fixed header container */
+.fixed-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background: #fff;
+  z-index: 9999;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  padding: 12px 0; /* vertical padding */
+}
+
+/* Push body down so content isn't hidden under header */
+body {
+  padding-top: 80px; /* adjust depending on header height */
+}
+
+/* Flex alignment */
+.site-header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Logo */
+.site-header .logo img {
+  max-height: 50px;
+}
+
+/* Navbar links */
+.navbar-nav > li > a {
+  font-size: 15px;
+  font-weight: 500;
+  padding: 12px 18px;
+  color: #333;
+  transition: all 0.3s ease;
+}
+
+.navbar-nav > li > a:hover,
+.navbar-nav > li.active > a {
+  color: #0072ce;
+}
+
+/* Dropdown menu */
+.dropdown-menu {
+  min-width: 220px;
+  padding: 8px 0;
+  border-radius: 0;
+  border: 1px solid #eaeaea;
+}
+
+.dropdown-menu > li > a {
+  padding: 10px 18px;
+  font-size: 14px;
+  color: #444;
+}
+
+.dropdown-menu > li > a:hover {
+  background: #f5f5f5;
+  color: #0072ce;
+}
+</style>
+
+
+
+  <!-- ====== HERO SECTION ====== -->
+  <section style="background:#f5f5f5; padding:100px 0; margin-top:60px; text-align:center;">
+    <div class="container">
+      <h1 style="font-size:36px; font-weight:700;">Micrometer - Digital Precision</h1>
+      <p style="font-size:18px; color:#555;">0.001 inch resolution measurement instrument for precision work</p>
+      <img src="images/product-2.jpg" alt="Digital Micrometer" class="img-responsive center-block" style="max-width:600px; margin-top:20px;">
+    </div>
+  </section>
+
+  <!-- ====== PRODUCT OVERVIEW ====== -->
+  <section class="product-detail" style="padding:60px 0;">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <img src="images/large-img-2-1.jpg" alt="Micrometer Device" class="img-responsive">
+        </div>
+        <div class="col-md-6">
+          <h2>Product Overview</h2>
+          <p>
+            The digital micrometer is an essential precision instrument designed for accurate measurement of thickness, diameters, and depths of various industrial components. Perfect for quality assurance, engineering applications, and manufacturing environments where precision is paramount.
+          </p>
+          <p style="margin-top:20px;">
+            With 0.001 inch resolution and a digital display for easy reading, this micrometer is ideal for B2B applications requiring consistent, reliable measurements. The hardened steel construction ensures durability and longevity in industrial settings.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== KEY FEATURES ====== -->
+  <section style="background:#fafafa; padding:60px 0;">
+    <div class="container">
+      <h2 class="text-center">Key Features & Specifications</h2>
+      <div class="row" style="margin-top:30px;">
+        <div class="col-md-12">
+          <ul>
+            <li>- 0.001 inch digital resolution for precise measurements</li>
+            <li>- 0-1 inch measurement range</li>
+            <li>- LCD digital display with clear readout</li>
+            <li>- Hardened stainless steel construction</li>
+            <li>- Ratchet stop mechanism for consistent measurement pressure</li>
+            <li>- IP54 water and dust resistance rating</li>
+            <li>- Auto shut-off function extends battery life</li>
+            <li>- Calibrated for accuracy to ±0.001 inch</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== SPECIFICATIONS ====== -->
+  <section style="padding:60px 0;">
+    <div class="container">
+      <h2 class="text-center">Technical Specifications</h2>
+      <table class="table table-bordered table-striped" style="margin-top:30px;">
+        <thead>
+          <tr>
+            <th>Parameter</th>
+            <th>Value</th>
+            <th>Unit</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Measurement Range</td>
+            <td>0-1</td>
+            <td>inch</td>
+          </tr>
+          <tr>
+            <td>Resolution</td>
+            <td>0.001</td>
+            <td>inch</td>
+          </tr>
+          <tr>
+            <td>Accuracy</td>
+            <td>±0.001</td>
+            <td>inch</td>
+          </tr>
+          <tr>
+            <td>Display Type</td>
+            <td>LCD Digital</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Material</td>
+            <td>Hardened Stainless Steel</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Weight</td>
+            <td>95</td>
+            <td>g</td>
+          </tr>
+          <tr>
+            <td>IP Rating</td>
+            <td>IP54</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Battery</td>
+            <td>CR2032 Lithium</td>
+            <td>-</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- ====== APPLICATIONS ====== -->
+  <section style="background:#fafafa; padding:60px 0;">
+    <div class="container">
+      <h2 class="text-center">Industrial Applications</h2>
+      <div class="row" style="margin-top:40px;">
+        <div class="col-md-4">
+          <h5 style="text-align:center;">Precision Manufacturing</h5>
+          <p>Quality control of turned parts, shafts, and cylindrical components in production environments.</p>
+        </div>
+        <div class="col-md-4">
+          <h5 style="text-align:center;">Engineering & Design</h5>
+          <p>Verification of part dimensions and tolerance checking during product development and prototyping.</p>
+        </div>
+        <div class="col-md-4">
+          <h5 style="text-align:center;">Inspection Services</h5>
+          <p>Professional measurement services for quality assurance and compliance with dimensional specifications.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== FOOTER ====== -->
+  <footer style="background:#222; color:#fff; padding:30px 0;">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <p>&copy; 2025 PrecisionTech. All Rights Reserved.</p>
+        </div>
+        <div class="col-md-6 text-right">
+          <p>Email: sales@precisiontech.com | Phone: 1-800-TOOLS-99</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/jquery-1.11.3.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/own-menu.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

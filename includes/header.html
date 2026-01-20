@@ -1,0 +1,443 @@
+<!-- ====== HEADER ====== -->
+<header class="site-header">
+  <div class="fixed-header">
+    <div class="container">
+
+      <!-- Logo -->
+      <div class="logo">
+        <a href="index.html">
+          <img class="img-responsive" src="images/logo.png" alt="Company Logo">
+        </a>
+      </div>
+
+      <!-- Navigation -->
+      <nav class="navbar ownmenu">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-open-btn" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"><i class="fa fa-navicon"></i></span>
+          </button>
+        </div>
+
+        <!-- NAVIGATION LINKS -->
+        <div class="collapse navbar-collapse" id="nav-open-btn">
+          <ul class="nav navbar-nav navbar-right">
+
+            <!-- Home -->
+            <li><a href="index.html">Home</a></li>
+
+            <!-- About -->
+            <li><a href="about.html">About</a></li>
+
+            <!-- News -->
+            <li><a href="news.html">News</a></li>
+
+            <!-- Products Dropdown -->
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                Products <b class="caret"></b>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="product-detail_01.html">Measurement Tools</a></li>
+                <li><a href="product-detail_02.html">Precision Instruments</a></li>
+                <li><a href="product-detail_03.html">Calibration Equipment</a></li>
+                <li><a href="product-detail_04.html">Testing Devices</a></li>
+              </ul>
+            </li>
+
+            <!-- Applications Dropdown -->
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                Applications <b class="caret"></b>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="applications.html#manufacturing">Manufacturing</a></li>
+                <li><a href="applications.html#quality-control">Quality Control</a></li>
+                <li><a href="applications.html#inspection-services">Inspection Services</a></li>
+              </ul>
+            </li>
+
+            <!-- Resources Dropdown -->
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                Resources <b class="caret"></b>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="resources.html#company-info">Company Info</a></li>
+                <li><a href="resources.html#technical-support">Technical Support</a></li>
+                <li><a href="resources.html#contact-sales">Contact Sales</a></li>
+              </ul>
+            </li>
+
+          </ul>
+        </div>
+      </nav>
+
+    </div>
+  </div>
+</header>
+
+<!-- ====== FIXED HEADER STYLING ====== -->
+<style>
+/* Fixed header container */
+.fixed-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background: #fff;
+  z-index: 9999;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  padding: 12px 0;
+}
+
+body {
+  padding-top: 60px;
+}
+
+.site-header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.site-header .logo {
+  flex-shrink: 0;
+  margin-right: 40px;
+}
+
+.site-header .logo img {
+  max-height: 50px;
+  display: block;
+  transition: opacity 0.3s ease;
+}
+
+.site-header .logo a:hover img {
+  opacity: 0.85;
+}
+
+.navbar {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  margin-left: auto;
+}
+
+.navbar.ownmenu {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-header {
+  display: none;
+}
+
+.navbar-collapse {
+  display: flex !important;
+  flex-grow: 1;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.navbar-nav {
+  display: flex;
+  list-style: none;
+  margin: 0 !important;
+  padding: 0;
+  margin-left: auto;
+}
+
+.navbar-nav > li {
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-nav > li > a {
+  font-size: 14px;
+  font-weight: 600;
+  padding: 15px 16px;
+  color: #333;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  line-height: 1;
+  letter-spacing: 0.5px;
+  position: relative;
+  height: 48px;
+}
+
+.navbar-nav > li > a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 16px;
+  right: 16px;
+  height: 2px;
+  background: #0072ce;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease;
+  pointer-events: none;
+}
+
+.navbar-nav > li > a:hover::after,
+.navbar-nav > li.active > a::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.navbar-nav > li > a:hover,
+.navbar-nav > li.active > a {
+  color: #0072ce;
+}
+
+.caret {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 6px;
+  vertical-align: 0.255em;
+  border-top: 4px dashed;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
+  transition: transform 0.3s ease;
+}
+
+.navbar-nav > .dropdown > a .caret {
+  border-top-color: currentColor;
+}
+
+.navbar-nav > .dropdown:hover > a .caret {
+  transform: rotate(180deg);
+}
+
+/* Override ownmenu dropdown-menu */
+.navbar-nav > .dropdown {
+  position: relative;
+}
+
+.navbar-nav > .dropdown .dropdown-menu {
+  position: absolute !important;
+  top: calc(100% + 2px) !important;
+  left: 0 !important;
+  min-width: 240px !important;
+  padding: 12px 0 !important;
+  border-radius: 4px !important;
+  border: 1px solid #e0e0e0 !important;
+  background: white !important;
+  display: none !important;
+  z-index: 1001 !important;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.12) !important;
+  list-style: none !important;
+  margin: 0 !important;
+  margin-top: 0 !important;
+  float: none !important;
+  width: auto !important;
+  animation: dropdownSlide 0.2s ease-out !important;
+  overflow: hidden !important;
+}
+
+@keyframes dropdownSlide {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.navbar-nav > .dropdown:hover > .dropdown-menu {
+  display: block !important;
+}
+
+.navbar-nav > .dropdown .dropdown-menu > li > a {
+  display: block;
+  padding: 12px 20px !important;
+  font-size: 14px;
+  color: #444;
+  text-decoration: none;
+  white-space: nowrap;
+  line-height: 20px;
+  background: none !important;
+  position: relative !important;
+  z-index: 2 !important;
+  transition: all 0.2s ease !important;
+  letter-spacing: 0.3px;
+}
+
+.navbar-nav > .dropdown .dropdown-menu > li > a:before,
+.navbar-nav > .dropdown .dropdown-menu > li > a:after {
+  display: none !important;
+}
+
+/* Override ownmenu styles */
+.ownmenu .nav .dropdown-menu li a:before {
+  display: none !important;
+}
+
+.ownmenu .nav .dropdown-menu li a:after {
+  display: none !important;
+  content: none !important;
+}
+
+.ownmenu .dropdown-menu li a:after {
+  display: none !important;
+  content: none !important;
+}
+
+.navbar-nav > .dropdown .dropdown-menu > li > a::after {
+  display: none !important;
+}
+
+.navbar-nav > .dropdown .dropdown-menu > li > a:hover {
+  background: #f8f9fa !important;
+  color: #0072ce;
+}
+
+.navbar-nav > .dropdown .dropdown-menu > li {
+  list-style: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  position: relative !important;
+  z-index: 2 !important;
+  border-bottom: 1px solid #f0f0f0;
+  overflow: hidden;
+}
+
+.navbar-nav > .dropdown .dropdown-menu > li:last-child {
+  border-bottom: none;
+}
+
+.navbar-nav > .dropdown .dropdown-menu > li > a:hover {
+  background: #f8f9fa !important;
+  color: #0072ce;
+  padding-left: 20px !important;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .site-header .logo {
+    margin-right: 20px;
+  }
+
+  .navbar-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .navbar-toggle {
+    background: none;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    float: none;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar-toggle:hover {
+    opacity: 0.7;
+  }
+
+  .icon-bar {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background-color: #333;
+    margin: 4px 0;
+    transition: all 0.3s ease;
+    border-radius: 2px;
+  }
+
+  .navbar-toggle.collapsed .icon-bar:nth-child(2) {
+    opacity: 1;
+  }
+
+  .navbar-collapse {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: white;
+    border-bottom: 1px solid #e0e0e0;
+    width: 100%;
+    margin: 0 !important;
+    padding: 0 !important;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  }
+
+  .navbar-collapse.collapse.in,
+  .navbar-collapse:not(.collapse) {
+    display: flex !important;
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+    width: 100%;
+    margin-left: 0 !important;
+    margin: 0 !important;
+  }
+
+  .navbar-nav > li {
+    border-bottom: 1px solid #f0f0f0;
+  }
+
+  .navbar-nav > li > a {
+    padding: 14px 18px;
+    border-radius: 0;
+    height: auto;
+  }
+
+  .navbar-nav > li > a::after {
+    display: none;
+  }
+
+  .navbar-nav > .dropdown .dropdown-menu {
+    position: static !important;
+    float: none !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: none !important;
+    background: #f9fafb !important;
+    display: none !important;
+    box-shadow: none !important;
+    animation: none !important;
+    margin-top: 0 !important;
+  }
+
+  .navbar-nav > .dropdown .dropdown-menu > li {
+    border-bottom: 1px solid #e8e8e8;
+  }
+
+  .navbar-nav > .dropdown .dropdown-menu > li > a {
+    padding: 12px 18px 12px 28px !important;
+    font-size: 14px;
+    color: #444;
+  }
+
+  .navbar-nav > .dropdown .dropdown-menu > li > a:hover {
+    background: #f0f0f0 !important;
+    padding-left: 28px !important;
+  }
+
+  .navbar-nav > .dropdown:hover > .dropdown-menu {
+    display: block !important;
+  }
+
+  .caret {
+    margin-left: 4px;
+  }
+}
+</style>

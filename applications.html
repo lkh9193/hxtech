@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="M_Adnan">
+<title>Applications - PrecisionTech</title>
+
+<!-- SLIDER REVOLUTION 4.x CSS SETTINGS -->
+<link rel="stylesheet" type="text/css" href="rs-plugin/css/settings.css" media="screen" />
+
+<!-- Bootstrap Core CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Custom CSS -->
+<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href="css/ionicons.min.css" rel="stylesheet">
+<link href="css/main.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<link href="css/responsive.css" rel="stylesheet">
+
+<!-- JavaScripts -->
+<script src="js/modernizr.js"></script>
+
+<!-- Online Fonts -->
+<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900' rel='stylesheet' type='text/css'>
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+
+<!-- Header placeholder -->
+<div id="site-header-container"></div>
+  
+  <!--======= SUB BANNER =========-->
+  <section class="sub-bnr" data-stellar-background-ratio="0.5">
+    <div class="position-center-center">
+      <div class="container">
+        <h4>APPLICATIONS</h4>
+        <p>Precision measurement solutions tailored for your industry and application needs.</p>
+        <ol class="breadcrumb">
+          <li><a href="index.html">Home</a></li>
+          <li class="active">APPLICATIONS</li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- Content -->
+  <div id="content">
+    <section style="padding: 80px 0;">
+      <div class="container">
+        <div class="row">
+          
+          <!-- Sidebar -->
+          <div class="col-md-3">
+            <div style="border: 3px solid #003d99; border-radius: 4px; overflow: hidden;">
+              <!-- Sidebar Header -->
+              <div style="background: #003d99; color: white; padding: 20px 15px; font-weight: 700; font-size: 16px; cursor: pointer;" class="sidebar-header" onclick="toggleApp(event, 'manufacturing')">
+                <i class="fa fa-industry" style="margin-right: 10px;"></i>Manufacturing
+              </div>
+              
+              <!-- Sidebar Items -->
+              <div style="background: white;">
+                <div style="padding: 15px; border-bottom: 1px solid #e0e0e0; cursor: pointer;" class="sidebar-item active-app" onclick="switchApp('manufacturing')">
+                  Manufacturing
+                </div>
+                <div style="padding: 15px; border-bottom: 1px solid #e0e0e0; cursor: pointer;" class="sidebar-item" onclick="switchApp('quality-control')">
+                  Quality Control
+                </div>
+                <div style="padding: 15px; cursor: pointer;" class="sidebar-item" onclick="switchApp('inspection-services')">
+                  Inspection Services
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Main Content -->
+          <div class="col-md-9" style="padding-left: 40px;">
+            
+            <!-- Manufacturing Section -->
+            <div id="manufacturing-content" class="app-content">
+              <h2 style="color: #003d99; margin-bottom: 20px;">Manufacturing</h2>
+              <p style="font-size: 16px; line-height: 1.8; margin-bottom: 30px;">
+                PrecisionTech's precision measurement solutions are essential tools for modern manufacturing operations. Our comprehensive range of instruments and devices help manufacturers maintain strict quality standards, ensure product consistency, and optimize production processes. From dimensional verification to advanced testing, we provide the expertise and equipment needed for manufacturing excellence.
+              </p>
+              <h4 style="color: #333; margin: 30px 0 20px 0;">Key Applications in Manufacturing:</h4>
+              <ul style="font-size: 15px; line-height: 2; color: #555;">
+                <li><i class="fa fa-check" style="color: #0072ce; margin-right: 10px;"></i>Dimensional verification and component measurement on production lines</li>
+                <li><i class="fa fa-check" style="color: #0072ce; margin-right: 10px;"></i>Tolerance verification to ensure parts meet design specifications</li>
+                <li><i class="fa fa-check" style="color: #0072ce; margin-right: 10px;"></i>In-process quality control and first-piece inspection</li>
+                <li><i class="fa fa-check" style="color: #0072ce; margin-right: 10px;"></i>Material testing and validation for raw materials and components</li>
+                <li><i class="fa fa-check" style="color: #0072ce; margin-right: 10px;"></i>Calibration management and traceability documentation</li>
+                <li><i class="fa fa-check" style="color: #0072ce; margin-right: 10px;"></i>Statistical analysis and process improvement initiatives</li>
+                <li><i class="fa fa-check" style="color: #0072ce; margin-right: 10px;"></i>ISO 9001 compliance and quality management system support</li>
+              </ul>
+              <h4 style="color: #333; margin: 30px 0 20px 0;">Industry Focus:</h4>
+              <p style="font-size: 15px; color: #555;">
+                Automotive manufacturing, aerospace component production, electronics manufacturing, medical device fabrication, machinery and equipment production, and general industrial manufacturing.
+              </p>
+            </div>
+
+            <!-- Quality Control Section -->
+            <div id="quality-control-content" class="app-content" style="display: none;">
+              <h2 style="color: #003d99; margin-bottom: 20px;">Quality Control</h2>
+              <p style="font-size: 16px; line-height: 1.8; margin-bottom: 30px;">
+                Quality control is the foundation of excellence in modern industry. PrecisionTech provides advanced measurement and testing equipment specifically designed for quality assurance professionals. Our solutions enable systematic inspection, defect detection, and compliance verification throughout the manufacturing process and supply chain.
+              </p>
+              <h4 style="color: #333; margin: 30px 0 20px 0;">Key Applications in Quality Control:</h4>
+              <ul style="font-size: 15px; line-height: 2; color: #555;">
+                <li><i class="fa fa-check" style="color: #0072ce; margin-right: 10px;"></i>Incoming material inspection and supplier verification</li>
+                <li><i class="fa fa-check" style="color: #0072ce; margin-right: 10px;"></i>In-process inspection at critical manufacturing stages</li>
+                <li><i class="fa fa-check" style="color: #0072ce; margin-right: 10px;"></i>Final product inspection and acceptance testing</li>
+                <li><i class="fa fa-check" style="color: #0072ce; margin-right: 10px;"></i>Hardness testing and material property verification</li>
+                <li><i class="fa fa-check" style="color: #0072ce; margin-right: 10px;"></i>Batch testing and statistical sampling analysis</li>
+                <li><i class="fa fa-check" style="color: #0072ce; margin-right: 10px;"></i>Non-destructive testing and defect detection</li>
+                <li><i class="fa fa-check" style="color: #0072ce; margin-right: 10px;"></i>Regulatory compliance documentation and traceability</li>
+              </ul>
+              <h4 style="color: #333; margin: 30px 0 20px 0;">Industry Focus:</h4>
+              <p style="font-size: 15px; color: #555;">
+                Food and beverage manufacturing, pharmaceutical production, medical device manufacturing, consumer electronics, automotive suppliers, and contract manufacturers requiring rigorous quality standards.
+              </p>
+            </div>
+
+            <!-- Inspection Services Section -->
+            <div id="inspection-services-content" class="app-content" style="display: none;">
+              <h2 style="color: #003d99; margin-bottom: 20px;">Inspection Services</h2>
+              <p style="font-size: 16px; line-height: 1.8; margin-bottom: 30px;">
+                PrecisionTech offers professional inspection services to verify product quality, ensure compliance, and validate manufacturing processes. Our certified inspectors use state-of-the-art equipment and established methodologies to provide objective, accurate inspection results. We deliver comprehensive inspection solutions from initial concept validation through final product delivery.
+              </p>
+              <h4 style="color: #333; margin: 30px 0 20px 0;">Key Inspection Services:</h4>
+              <ul style="font-size: 15px; line-height: 2; color: #555;">
+                <li><i class="fa fa-check" style="color: #0072ce; margin-right: 10px;"></i>Third-party dimensional verification and inspection</li>
+                <li><i class="fa fa-check" style="color: #0072ce; margin-right: 10px;"></i>Material composition analysis and testing</li>
+                <li><i class="fa fa-check" style="color: #0072ce; margin-right: 10px;"></i>Surface finish and roughness measurement</li>
+                <li><i class="fa fa-check" style="color: #0072ce; margin-right: 10px;"></i>Prototype and first-article inspection (FAI)</li>
+                <li><i class="fa fa-check" style="color: #0072ce; margin-right: 10px;"></i>Process capability and Cpk/Ppk studies</li>
+                <li><i class="fa fa-check" style="color: #0072ce; margin-right: 10px;"></i>Calibration verification and certification</li>
+                <li><i class="fa fa-check" style="color: #0072ce; margin-right: 10px;"></i>Compliance audits and certification support</li>
+                <li><i class="fa fa-check" style="color: #0072ce; margin-right: 10px;"></i>Detailed inspection reports and trend analysis</li>
+              </ul>
+              <h4 style="color: #333; margin: 30px 0 20px 0;">Industry Focus:</h4>
+              <p style="font-size: 15px; color: #555;">
+                Aerospace and defense industries, medical device manufacturers, automotive OEMs and suppliers, contract manufacturers, engineering firms, and companies requiring objective third-party verification and certification.
+              </p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose PrecisionTech -->
+    <section style="background: #f5f5f5; padding: 80px 0;">
+      <div class="container">
+        <h2 class="text-center" style="margin-bottom: 60px; color: #003d99;">Why Choose PrecisionTech for Your Applications?</h2>
+        <div class="row">
+          <div class="col-md-3 text-center" style="margin-bottom: 40px;">
+            <div style="font-size: 48px; color: #0072ce; margin-bottom: 15px;">
+              <i class="fa fa-crosshairs"></i>
+            </div>
+            <h4>Precision & Accuracy</h4>
+            <p style="color: #666;">State-of-the-art equipment calibrated to the highest standards ensures accurate, reliable measurement results for your critical applications.</p>
+          </div>
+          <div class="col-md-3 text-center" style="margin-bottom: 40px;">
+            <div style="font-size: 48px; color: #0072ce; margin-bottom: 15px;">
+              <i class="fa fa-cogs"></i>
+            </div>
+            <h4>Expert Support</h4>
+            <p style="color: #666;">Our team of certified professionals provides comprehensive training, technical support, and consultation to optimize your measurement processes.</p>
+          </div>
+          <div class="col-md-3 text-center" style="margin-bottom: 40px;">
+            <div style="font-size: 48px; color: #0072ce; margin-bottom: 15px;">
+              <i class="fa fa-check-circle"></i>
+            </div>
+            <h4>Compliance Ready</h4>
+            <p style="color: #666;">Our solutions support ISO 9001, AS9100, ISO 13485, and other industry standards, ensuring your compliance requirements are met.</p>
+          </div>
+          <div class="col-md-3 text-center" style="margin-bottom: 40px;">
+            <div style="font-size: 48px; color: #0072ce; margin-bottom: 15px;">
+              <i class="fa fa-handshake-o"></i>
+            </div>
+            <h4>Partnership Approach</h4>
+            <p style="color: #666;">We view every customer as a long-term partner, committed to understanding your unique needs and delivering customized solutions.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- Footer placeholder -->
+  <div id="site-footer-container"></div>
+
+  <!-- Scripts -->
+  <script src="js/jquery-1.11.3.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/own-menu.js"></script>
+  <script src="rs-plugin/js/jquery.themepunch.revolution.js"></script>
+  <script src="js/load-includes.js"></script>
+  <script src="js/main.js"></script>
+
+  <script>
+    function switchApp(app) {
+      // Hide all content
+      document.getElementById('manufacturing-content').style.display = 'none';
+      document.getElementById('quality-control-content').style.display = 'none';
+      document.getElementById('inspection-services-content').style.display = 'none';
+      
+      // Remove active class from all items
+      document.querySelectorAll('.sidebar-item').forEach(item => {
+        item.classList.remove('active-app');
+      });
+      
+      // Show selected content
+      document.getElementById(app + '-content').style.display = 'block';
+      
+      // Add active class to clicked item
+      event.target.classList.add('active-app');
+      
+      // Update sidebar header
+      const headerMap = {
+        'manufacturing': '<i class="fa fa-industry" style="margin-right: 10px;"></i>Manufacturing',
+        'quality-control': '<i class="fa fa-flask" style="margin-right: 10px;"></i>Quality Control',
+        'inspection-services': '<i class="fa fa-search" style="margin-right: 10px;"></i>Inspection Services'
+      };
+      document.querySelector('.sidebar-header').innerHTML = headerMap[app];
+    }
+
+    // Handle hash-based navigation on page load
+    window.addEventListener('load', function() {
+      let hash = window.location.hash.substring(1);
+      if (hash && (hash === 'manufacturing' || hash === 'quality-control' || hash === 'inspection-services')) {
+        // Hide all content
+        document.getElementById('manufacturing-content').style.display = 'none';
+        document.getElementById('quality-control-content').style.display = 'none';
+        document.getElementById('inspection-services-content').style.display = 'none';
+        
+        // Remove active class from all items
+        document.querySelectorAll('.sidebar-item').forEach(item => {
+          item.classList.remove('active-app');
+        });
+        
+        // Show selected content
+        document.getElementById(hash + '-content').style.display = 'block';
+        
+        // Add active class to correct sidebar item
+        const items = document.querySelectorAll('.sidebar-item');
+        if (hash === 'manufacturing') items[0].classList.add('active-app');
+        else if (hash === 'quality-control') items[1].classList.add('active-app');
+        else if (hash === 'inspection-services') items[2].classList.add('active-app');
+        
+        // Update sidebar header
+        const headerMap = {
+          'manufacturing': '<i class="fa fa-industry" style="margin-right: 10px;"></i>Manufacturing',
+          'quality-control': '<i class="fa fa-flask" style="margin-right: 10px;"></i>Quality Control',
+          'inspection-services': '<i class="fa fa-search" style="margin-right: 10px;"></i>Inspection Services'
+        };
+        document.querySelector('.sidebar-header').innerHTML = headerMap[hash];
+      }
+    });
+  </script>
+
+  <style>
+    .sidebar-item {
+      transition: all 0.3s ease;
+      color: #333;
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    .sidebar-item:hover {
+      background: #f0f0f0;
+      padding-left: 20px;
+    }
+
+    .sidebar-item.active-app {
+      background: #e8f4f8;
+      color: #0072ce;
+      border-left: 4px solid #0072ce;
+      padding-left: 11px;
+    }
+
+    @media (max-width: 768px) {
+      .col-md-3, .col-md-9 {
+        margin-bottom: 30px;
+      }
+      
+      .col-md-9 {
+        padding-left: 15px !important;
+      }
+    }
+  </style>
+
+</body>
+</html>
