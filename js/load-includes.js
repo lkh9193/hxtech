@@ -7,6 +7,7 @@
     return fetch(path)
       .then(response => {
         if (!response.ok) {
+          console.warn('Failed to load ' + path + ' (status: ' + response.status + ')');
           throw new Error('Failed to load ' + path);
         }
         return response.text();
@@ -32,14 +33,14 @@
   }
   
   function loadIncludes() {
-    // Determine the base path depending on directory structure
-    const currentPath = window.location.pathname;
-    let basePath = '';
+    // Determine the base path
+    let basePath = './includes/';
     
-    // If in root directory, includes folder is directly accessible
-    if (currentPath.endsWith('.html') || currentPath === '/') {
-      basePath = './includes/';
-    }
+    // Get the current directory path
+    const currentPath = window.location.pathname;
+    
+    // For pages in root or subdirectories, use relative path
+    // This works for both local and GitHub Pages deployments
     
     // Load header if the container exists
     if (document.getElementById('site-header-container')) {
