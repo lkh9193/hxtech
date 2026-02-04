@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Products - HX Technology</title>
+
+  <!-- Bootstrap Core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link href="css/font-awesome.min.css" rel="stylesheet">
+  <link href="css/ionicons.min.css" rel="stylesheet">
+  <link href="css/animate.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/responsive.css" rel="stylesheet">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Header placeholder -->
+  <div id="site-header-container"></div>
+  <!--======= SUB BANNER =========-->
+  <section class="sub-bnr" data-stellar-background-ratio="0.5">
+    <div class="position-center-center">
+      <div class="container">
+        <h4>Products</h4>
+        <p>
+        HX Technology provides advanced photonics, imaging, and optical analysis solutions for research laboratories, clinical R&D, and OEM partners. Our product portfolio is organized by solution category to help customers quickly identify the technologies that best match their applications.
+        </p>
+        <p>
+        Each solution category is supported by carefully selected partner brands, backed by local technical support, system integration expertise, and long-term service.
+        </p>
+        <ol class="breadcrumb">
+          <li><a href="index.html">Home</a></li>
+          <li class="active">PRODUCTS</li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- Content -->
+  <div id="content">
+    <section style="padding: 80px 0;">
+      <div class="container">
+        <div class="row">
+          
+          <!-- Sidebar -->
+          <div class="col-md-3">
+            <div style="border: 3px solid #003d99; border-radius: 4px; overflow: hidden;">
+              <!-- Sidebar Header -->
+              <div style="background: #003d99; color: white; padding: 20px 15px; font-weight: 700; font-size: 16px; cursor: pointer;" class="sidebar-header" onclick="toggleProduct(event, 'microscopy')">
+                <i class="fa fa-microscope" style="margin-right: 10px;"></i>Microscopy & Imaging
+              </div>
+              
+              <!-- Sidebar Items -->
+              <div style="background: white;">
+                <div style="padding: 15px; border-bottom: 1px solid #e0e0e0; cursor: pointer;" class="sidebar-item active-product" onclick="switchProduct('microscopy')">
+                  Microscopy & Imaging
+                </div>
+                <div style="padding: 15px; border-bottom: 1px solid #e0e0e0; cursor: pointer;" class="sidebar-item" onclick="switchProduct('spectroscopy')">
+                  Spectroscopy & Analysis
+                </div>
+                <div style="padding: 15px; border-bottom: 1px solid #e0e0e0; cursor: pointer;" class="sidebar-item" onclick="switchProduct('photonics-fab')">
+                  Photonics & Fabrication
+                </div>
+                <div style="padding: 15px; border-bottom: 1px solid #e0e0e0; cursor: pointer;" class="sidebar-item" onclick="switchProduct('lasers')">
+                  Lasers & Light Sources
+                </div>
+                <div style="padding: 15px; border-bottom: 1px solid #e0e0e0; cursor: pointer;" class="sidebar-item" onclick="switchProduct('detectors')">
+                  Detectors & Cameras
+                </div>
+                <div style="padding: 15px; cursor: pointer;" class="sidebar-item" onclick="switchProduct('automation')">
+                  Automation & Motion
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Main Content -->
+          <div class="col-md-9" style="padding-left: 40px;">
+            
+            <!-- Overview -->
+            <!-- <div style="margin-bottom: 40px;">
+              <h2 style="color: #003d99; margin-bottom: 15px;">Products</h2>
+              <p style="font-size: 16px; line-height: 1.8; color: #555;">
+                HX Technology provides advanced photonics, imaging, and optical analysis solutions for research laboratories, clinical R&D, and OEM partners. Our product portfolio is organized by solution category to help customers quickly identify the technologies that best match their applications.
+              </p>
+              <p style="font-size: 16px; line-height: 1.8; color: #555; margin-top: 20px;">
+                Each solution category is supported by carefully selected partner brands, backed by local technical support, system integration expertise, and long-term service.
+              </p>
+            </div> -->
+            
+            <!-- Microscopy & Imaging Section -->
+            <div id="microscopy-content" class="product-content">
+              <h2 style="color: #003d99; margin-bottom: 20px;">Microscopy & Imaging</h2>
+              <p style="font-size: 16px; line-height: 1.8; margin-bottom: 30px;">
+                Advanced microscopy and imaging platforms ranging from routine laboratory microscopes to cutting-edge super-resolution, light-sheet, and in vivo imaging systems.
+              </p>
+
+              <h4 style="color: #333; margin: 30px 0 20px 0;">Key Capabilities</h4>
+              <ul style="font-size: 15px; line-height: 2; color: #555;">
+                <li><i class="fa fa-check" style="color: #0072ce; margin-right: 10px;"></i>Super-resolution and live-cell imaging</li>
+                <li><i class="fa fa-check" style="color: #0072ce; margin-right: 10px;"></i>Light-sheet and volumetric 3D imaging</li>
+                <li><i class="fa fa-check" style="color: #0072ce; margin-right: 10px;"></i>Intravital and in vivo microscopy</li>
+                <li><i class="fa fa-check" style="color: #0072ce; margin-right: 10px;"></i>Routine and research-grade optical microscopes</li>
+              </ul>
+
+              <h4 style="color: #333; margin: 30px 0 20px 0;">Representative Partners</h4>
+              <ul style="font-size: 15px; line-height: 2; color: #555;">
+                <li><strong>CSR Biotech</strong> — Live-cell super-resolution microscopy (MI-SIM)</li>
+                <li><strong>IVIM Technology</strong> — Intravital and in vivo imaging systems</li>
+                <li><strong>PhaseView</strong> — Light-sheet microscopy platforms</li>
+                <li><strong>Smart View (慧观生物)</strong> — Intelligent light-sheet microscopy systems</li>
+                <li><strong>ISS</strong> — Advanced fluorescence microscopy and confocal imaging</li>
+                <li><strong>Transcend Vivoscope</strong> — Miniature two-photon / three-photon imaging systems</li>
+                <li><strong>NOVEL</strong> — Optical microscopes for education and routine laboratory use</li>
+                <li><strong>OSTEC</strong> — Microscope cameras and imaging accessories</li>
+              </ul>
+
+              <h4 style="color: #333; margin: 30px 0 20px 0;">Typical Applications</h4>
+              <ul style="font-size: 15px; line-height: 2; color: #555;">
+                <li><i class="fa fa-check" style="color: #0072ce; margin-right: 10px;"></i>Cell biology and live-cell imaging</li>
+                <li><i class="fa fa-check" style="color: #0072ce; margin-right: 10px;"></i>Developmental biology and organoids</li>
+                <li><i class="fa fa-check" style="color: #0072ce; margin-right: 10px;"></i>Neuroscience and in vivo imaging</li>
+                <li><i class="fa fa-check" style="color: #0072ce; margin-right: 10px;"></i>Teaching laboratories and routine imaging</li>
+              </ul>
+
+              <h4 style="color: #333; margin: 30px 0 20px 0;">HX Technology Value</h4>
+              <ul style="font-size: 15px; line-height: 2; color: #555;">
+                <li><i class="fa fa-check" style="color: #0072ce; margin-right: 10px;"></i>Workflow-driven system recommendation</li>
+                <li><i class="fa fa-check" style="color: #0072ce; margin-right: 10px;"></i>Turnkey installation and training</li>
+                <li><i class="fa fa-check" style="color: #0072ce; margin-right: 10px;"></i>Environmental control and accessories integration</li>
+                <li><i class="fa fa-check" style="color: #0072ce; margin-right: 10px;"></i>Long-term technical support</li>
+              </ul>
+            </div>
+
+            <!-- Spectroscopy & Optical Analysis Section -->
+            <div id="spectroscopy-content" class="product-content" style="display: none;">
+              <h2 style="color: #003d99; margin-bottom: 20px;">Spectroscopy & Optical Analysis</h2>
+              <p style="font-size: 16px; line-height: 1.8; margin-bottom: 30px;">
+                Compact and flexible spectroscopy solutions for optical characterization, material analysis, and process monitoring.
+              </p>
+
+              <h4 style="color: #333; margin: 30px 0 20px 0;">Key Capabilities</h4>
+              <ul style="font-size: 15px; line-height: 2; color: #555;">
+                <li><i class="fa fa-check" style="color: #0072ce; margin-right: 10px;"></i>Fiber-based UV-VIS-NIR spectroscopy</li>
+                <li><i class="fa fa-check" style="color: #0072ce; margin-right: 10px;"></i>Fluorescence and time-resolved spectroscopy</li>
+                <li><i class="fa fa-check" style="color: #0072ce; margin-right: 10px;"></i>Modular OEM-friendly designs</li>
+              </ul>
+
+              <h4 style="color: #333; margin: 30px 0 20px 0;">Representative Partners</h4>
+              <ul style="font-size: 15px; line-height: 2; color: #555;">
+                <li><strong>IdeaOptics</strong> — Fiber spectrometers and light sources</li>
+                <li><strong>ISS</strong> — Fluorescence spectroscopy and time-resolved analysis systems</li>
+              </ul>
+
+              <h4 style="color: #333; margin: 30px 0 20px 0;">Typical Applications</h4>
+              <ul style="font-size: 15px; line-height: 2; color: #555;">
+                <li><i class="fa fa-check" style="color: #0072ce; margin-right: 10px;"></i>Absorbance, transmission, and reflectance measurements</li>
+                <li><i class="fa fa-check" style="color: #0072ce; margin-right: 10px;"></i>Fluorescence and lifetime analysis</li>
+                <li><i class="fa fa-check" style="color: #0072ce; margin-right: 10px;"></i>Teaching and research laboratories</li>
+                <li><i class="fa fa-check" style="color: #0072ce; margin-right: 10px;"></i>Embedded and OEM spectroscopy modules</li>
+              </ul>
+
+              <h4 style="color: #333; margin: 30px 0 20px 0;">HX Technology Value</h4>
+              <ul style="font-size: 15px; line-height: 2; color: #555;">
+                <li><i class="fa fa-check" style="color: #0072ce; margin-right: 10px;"></i>System configuration and calibration</li>
+                <li><i class="fa fa-check" style="color: #0072ce; margin-right: 10px;"></i>Sampling optics and fiber selection</li>
+                <li><i class="fa fa-check" style="color: #0072ce; margin-right: 10px;"></i>Application-specific workflow setup</li>
+                <li><i class="fa fa-check" style="color: #0072ce; margin-right: 10px;"></i>Technical training and support</li>
+              </ul>
+            </div>
+
+            <!-- Photonics & Micro/Nano Fabrication Section -->
+            <div id="photonics-fab-content" class="product-content" style="display: none;">
+              <h2 style="color: #003d99; margin-bottom: 20px;">Photonics & Micro / Nano Fabrication</h2>
+              <p style="font-size: 16px; line-height: 1.8; margin-bottom: 30px;">
+                Ultra-precision fabrication platforms enabling micro- and nano-scale structures for photonics, materials science, and advanced research.
+              </p>
+
+              <h4 style="color: #333; margin: 30px 0 20px 0;">Key Capabilities</h4>
+              <ul style="font-size: 15px; line-height: 2; color: #555;">
+                <li><i class="fa fa-check" style="color: #0072ce; margin-right: 10px;"></i>Two-photon polymerization (2PP) micro-/nano-printing</li>
+                <li><i class="fa fa-check" style="color: #0072ce; margin-right: 10px;"></i>Sub-micron resolution 3D fabrication</li>
+                <li><i class="fa fa-check" style="color: #0072ce; margin-right: 10px;"></i>Research-grade microfabrication workflows</li>
+              </ul>
+
+              <h4 style="color: #333; margin: 30px 0 20px 0;">Representative Partners</h4>
+              <ul style="font-size: 15px; line-height: 2; color: #555;">
+                <li><strong>Nanoscribe</strong> — Two-photon polymerization systems for micro- and nano-fabrication</li>
+              </ul>
+
+              <h4 style="color: #333; margin: 30px 0 20px 0;">Typical Applications</h4>
+              <ul style="font-size: 15px; line-height: 2; color: #555;">
+                <li><i class="fa fa-check" style="color: #0072ce; margin-right: 10px;"></i>Micro-optics and photonic components</li>
+                <li><i class="fa fa-check" style="color: #0072ce; margin-right: 10px;"></i>Metamaterials and micro-structures</li>
+                <li><i class="fa fa-check" style="color: #0072ce; margin-right: 10px;"></i>Microfluidics and lab-on-chip</li>
+                <li><i class="fa fa-check" style="color: #0072ce; margin-right: 10px;"></i>Advanced materials research</li>
+              </ul>
+
+              <h4 style="color: #333; margin: 30px 0 20px 0;">HX Technology Value</h4>
+              <ul style="font-size: 15px; line-height: 2; color: #555;">
+                <li><i class="fa fa-check" style="color: #0072ce; margin-right: 10px;"></i>System configuration and application matching</li>
+                <li><i class="fa fa-check" style="color: #0072ce; margin-right: 10px;"></i>Installation and user training</li>
+                <li><i class="fa fa-check" style="color: #0072ce; margin-right: 10px;"></i>Process development support</li>
+                <li><i class="fa fa-check" style="color: #0072ce; margin-right: 10px;"></i>Local service and long-term partnership</li>
+              </ul>
+            </div>
+
+            <!-- Lasers & Light Sources Section -->
+            <div id="lasers-content" class="product-content" style="display: none;">
+              <h2 style="color: #003d99; margin-bottom: 20px;">Lasers & Light Sources</h2>
+              <p style="font-size: 16px; line-height: 1.8; margin-bottom: 30px;">
+                High-performance laser and broadband light sources for scientific research, imaging excitation, spectroscopy, and advanced photonics applications.
+              </p>
+
+              <h4 style="color: #333; margin: 30px 0 20px 0;">Key Capabilities</h4>
+              <ul style="font-size: 15px; line-height: 2; color: #555;">
+                <li><i class="fa fa-check" style="color: #0072ce; margin-right: 10px;"></i>Ultrafast femtosecond and picosecond fiber lasers</li>
+                <li><i class="fa fa-check" style="color: #0072ce; margin-right: 10px;"></i>Supercontinuum broadband light sources</li>
+                <li><i class="fa fa-check" style="color: #0072ce; margin-right: 10px;"></i>Stable excitation sources for imaging and spectroscopy</li>
+                <li><i class="fa fa-check" style="color: #0072ce; margin-right: 10px;"></i>OEM-ready laser platforms</li>
+              </ul>
+
+              <h4 style="color: #333; margin: 30px 0 20px 0;">Representative Partners</h4>
+              <ul style="font-size: 15px; line-height: 2; color: #555;">
+                <li><strong>YSL Photonics</strong> — Femtosecond / picosecond fiber lasers, supercontinuum sources</li>
+                <li><strong>CNI Laser</strong> — CW and DPSS lasers across visible and IR wavelengths</li>
+              </ul>
+
+              <h4 style="color: #333; margin: 30px 0 20px 0;">Typical Applications</h4>
+              <ul style="font-size: 15px; line-height: 2; color: #555;">
+                <li><i class="fa fa-check" style="color: #0072ce; margin-right: 10px;"></i>Fluorescence and nonlinear microscopy excitation</li>
+                <li><i class="fa fa-check" style="color: #0072ce; margin-right: 10px;"></i>Spectroscopy and optical characterization</li>
+                <li><i class="fa fa-check" style="color: #0072ce; margin-right: 10px;"></i>Micro- and nano-processing</li>
+                <li><i class="fa fa-check" style="color: #0072ce; margin-right: 10px;"></i>OEM photonics integration</li>
+              </ul>
+
+              <h4 style="color: #333; margin: 30px 0 20px 0;">HX Technology Value</h4>
+              <ul style="font-size: 15px; line-height: 2; color: #555;">
+                <li><i class="fa fa-check" style="color: #0072ce; margin-right: 10px;"></i>Laser selection and configuration consulting</li>
+                <li><i class="fa fa-check" style="color: #0072ce; margin-right: 10px;"></i>Beam delivery and safety design</li>
+                <li><i class="fa fa-check" style="color: #0072ce; margin-right: 10px;"></i>Integration with microscopes and optical systems</li>
+                <li><i class="fa fa-check" style="color: #0072ce; margin-right: 10px;"></i>Local commissioning and support</li>
+              </ul>
+            </div>
+
+            <!-- Detectors & Camera Systems Section -->
+            <div id="detectors-content" class="product-content" style="display: none;">
+              <h2 style="color: #003d99; margin-bottom: 20px;">Detectors & Camera Systems</h2>
+              <p style="font-size: 16px; line-height: 1.8; margin-bottom: 30px;">
+                High-performance imaging detectors and cameras for low-light, high-speed, and time-resolved applications.
+              </p>
+
+              <h4 style="color: #333; margin: 30px 0 20px 0;">Key Capabilities</h4>
+              <ul style="font-size: 15px; line-height: 2; color: #555;">
+                <li><i class="fa fa-check" style="color: #0072ce; margin-right: 10px;"></i>Scientific and industrial cameras</li>
+                <li><i class="fa fa-check" style="color: #0072ce; margin-right: 10px;"></i>Single-photon and ultra-low-light detection</li>
+                <li><i class="fa fa-check" style="color: #0072ce; margin-right: 10px;"></i>OEM-ready imaging modules</li>
+              </ul>
+
+              <h4 style="color: #333; margin: 30px 0 20px 0;">Representative Partners</h4>
+              <ul style="font-size: 15px; line-height: 2; color: #555;">
+                <li><strong>FLIR (Teledyne)</strong> — Scientific and industrial cameras</li>
+                <li><strong>PI Imaging</strong> — SPAD and photon-counting detector systems</li>
+                <li><strong>Lambert Instruments</strong> — FLIM cameras & lifetime imaging detectors</li>
+              </ul>
+
+              <h4 style="color: #333; margin: 30px 0 20px 0;">Typical Applications</h4>
+              <ul style="font-size: 15px; line-height: 2; color: #555;">
+                <li><i class="fa fa-check" style="color: #0072ce; margin-right: 10px;"></i>Low-light and time-resolved imaging</li>
+                <li><i class="fa fa-check" style="color: #0072ce; margin-right: 10px;"></i>Machine vision and automation</li>
+                <li><i class="fa fa-check" style="color: #0072ce; margin-right: 10px;"></i>Fluorescence lifetime imaging (FLIM) detection</li>
+                <li><i class="fa fa-check" style="color: #0072ce; margin-right: 10px;"></i>Embedded imaging systems</li>
+              </ul>
+
+              <h4 style="color: #333; margin: 30px 0 20px 0;">HX Technology Value</h4>
+              <ul style="font-size: 15px; line-height: 2; color: #555;">
+                <li><i class="fa fa-check" style="color: #0072ce; margin-right: 10px;"></i>Detector selection and system matching</li>
+                <li><i class="fa fa-check" style="color: #0072ce; margin-right: 10px;"></i>Optics, filters, and illumination integration</li>
+                <li><i class="fa fa-check" style="color: #0072ce; margin-right: 10px;"></i>Software and SDK support</li>
+                <li><i class="fa fa-check" style="color: #0072ce; margin-right: 10px;"></i>OEM and research system integration</li>
+              </ul>
+            </div>
+
+            <!-- Automation & Motion Control Section -->
+            <div id="automation-content" class="product-content" style="display: none;">
+              <h2 style="color: #003d99; margin-bottom: 20px;">Automation & Motion Control</h2>
+              <p style="font-size: 16px; line-height: 1.8; margin-bottom: 30px;">
+                Precision motion and automation components for microscope platforms and imaging workflows.
+              </p>
+
+              <h4 style="color: #333; margin: 30px 0 20px 0;">Key Capabilities</h4>
+              <ul style="font-size: 15px; line-height: 2; color: #555;">
+                <li><i class="fa fa-check" style="color: #0072ce; margin-right: 10px;"></i>Motorized stages and focus drives</li>
+                <li><i class="fa fa-check" style="color: #0072ce; margin-right: 10px;"></i>Automated scanning and positioning</li>
+                <li><i class="fa fa-check" style="color: #0072ce; margin-right: 10px;"></i>Microscope retrofit and upgrades</li>
+              </ul>
+
+              <h4 style="color: #333; margin: 30px 0 20px 0;">Representative Partners</h4>
+              <ul style="font-size: 15px; line-height: 2; color: #555;">
+                <li><strong>PRIOR Scientific</strong> — Motion stages, focus controllers, and microscope automation</li>
+              </ul>
+
+              <h4 style="color: #333; margin: 30px 0 20px 0;">Typical Applications</h4>
+              <ul style="font-size: 15px; line-height: 2; color: #555;">
+                <li><i class="fa fa-check" style="color: #0072ce; margin-right: 10px;"></i>Large-area scanning and tiling</li>
+                <li><i class="fa fa-check" style="color: #0072ce; margin-right: 10px;"></i>Multi-well and high-content imaging</li>
+                <li><i class="fa fa-check" style="color: #0072ce; margin-right: 10px;"></i>Long-term time-lapse experiments</li>
+                <li><i class="fa fa-check" style="color: #0072ce; margin-right: 10px;"></i>Automated research workflows</li>
+              </ul>
+
+              <h4 style="color: #333; margin: 30px 0 20px 0;">HX Technology Value</h4>
+              <ul style="font-size: 15px; line-height: 2; color: #555;">
+                <li><i class="fa fa-check" style="color: #0072ce; margin-right: 10px;"></i>Motion system integration</li>
+                <li><i class="fa fa-check" style="color: #0072ce; margin-right: 10px;"></i>Workflow automation design</li>
+                <li><i class="fa fa-check" style="color: #0072ce; margin-right: 10px;"></i>Compatibility assessment with existing microscopes</li>
+                <li><i class="fa fa-check" style="color: #0072ce; margin-right: 10px;"></i>Installation and calibration</li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- Footer placeholder -->
+  <div id="site-footer-container"></div>
+
+  <!-- jQuery -->
+  <script src="js/jquery-1.11.3.min.js"></script>
+
+  <!-- Bootstrap JS -->
+  <script src="js/bootstrap.min.js"></script>
+
+  <!-- Plugins -->
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/own-menu.js"></script>
+  <script src="rs-plugin/js/jquery.themepunch.revolution.js"></script>
+  <script src="js/load-includes.js"></script>
+  <script src="js/main.js"></script>
+
+  <script>
+    function switchProduct(product) {
+      // Hide all product content
+      document.getElementById('microscopy-content').style.display = 'none';
+      document.getElementById('spectroscopy-content').style.display = 'none';
+      document.getElementById('photonics-fab-content').style.display = 'none';
+      document.getElementById('lasers-content').style.display = 'none';
+      document.getElementById('detectors-content').style.display = 'none';
+      document.getElementById('automation-content').style.display = 'none';
+      
+      // Remove active class from all items
+      document.querySelectorAll('.sidebar-item').forEach(item => {
+        item.classList.remove('active-product');
+      });
+      
+      // Show selected content
+      document.getElementById(product + '-content').style.display = 'block';
+      
+      // Add active class to clicked item
+      event.target.classList.add('active-product');
+      
+      // Update sidebar header
+      const headerMap = {
+        'microscopy': '<i class="fa fa-microscope" style="margin-right: 10px;"></i>Microscopy & Imaging',
+        'spectroscopy': '<i class="fa fa-flask" style="margin-right: 10px;"></i>Spectroscopy & Analysis',
+        'photonics-fab': '<i class="fa fa-cube" style="margin-right: 10px;"></i>Photonics & Fabrication',
+        'lasers': '<i class="fa fa-lightbulb-o" style="margin-right: 10px;"></i>Lasers & Light Sources',
+        'detectors': '<i class="fa fa-camera" style="margin-right: 10px;"></i>Detectors & Cameras',
+        'automation': '<i class="fa fa-cogs" style="margin-right: 10px;"></i>Automation & Motion'
+      };
+      document.querySelector('.sidebar-header').innerHTML = headerMap[product];
+    }
+
+    function toggleProduct(event, product) {
+      event.preventDefault();
+      switchProduct(product);
+    }
+
+    // Handle hash-based navigation on page load
+    window.addEventListener('load', function() {
+      let hash = window.location.hash.substring(1);
+      if (hash && (hash === 'microscopy' || hash === 'spectroscopy' || hash === 'photonics-fab' || hash === 'lasers' || hash === 'detectors' || hash === 'automation')) {
+        // Hide all content
+        document.getElementById('microscopy-content').style.display = 'none';
+        document.getElementById('spectroscopy-content').style.display = 'none';
+        document.getElementById('photonics-fab-content').style.display = 'none';
+        document.getElementById('lasers-content').style.display = 'none';
+        document.getElementById('detectors-content').style.display = 'none';
+        document.getElementById('automation-content').style.display = 'none';
+        
+        // Remove active class from all items
+        document.querySelectorAll('.sidebar-item').forEach(item => {
+          item.classList.remove('active-product');
+        });
+        
+        // Show selected content
+        document.getElementById(hash + '-content').style.display = 'block';
+        
+        // Add active class to correct sidebar item
+        const items = document.querySelectorAll('.sidebar-item');
+        if (hash === 'microscopy') items[0].classList.add('active-product');
+        else if (hash === 'spectroscopy') items[1].classList.add('active-product');
+        else if (hash === 'photonics-fab') items[2].classList.add('active-product');
+        else if (hash === 'lasers') items[3].classList.add('active-product');
+        else if (hash === 'detectors') items[4].classList.add('active-product');
+        else if (hash === 'automation') items[5].classList.add('active-product');
+        
+        // Update sidebar header
+        const headerMap = {
+          'microscopy': '<i class="fa fa-microscope" style="margin-right: 10px;"></i>Microscopy & Imaging',
+          'spectroscopy': '<i class="fa fa-flask" style="margin-right: 10px;"></i>Spectroscopy & Analysis',
+          'photonics-fab': '<i class="fa fa-cube" style="margin-right: 10px;"></i>Photonics & Fabrication',
+          'lasers': '<i class="fa fa-lightbulb-o" style="margin-right: 10px;"></i>Lasers & Light Sources',
+          'detectors': '<i class="fa fa-camera" style="margin-right: 10px;"></i>Detectors & Cameras',
+          'automation': '<i class="fa fa-cogs" style="margin-right: 10px;"></i>Automation & Motion'
+        };
+        document.querySelector('.sidebar-header').innerHTML = headerMap[hash];
+      }
+    });
+  </script>
+
+  <style>
+    .sidebar-item {
+      transition: all 0.3s ease;
+      color: #333;
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    .sidebar-item:hover {
+      background: #f0f0f0;
+      padding-left: 20px;
+    }
+
+    .sidebar-item.active-product {
+      background: #e8f4f8;
+      color: #0072ce;
+      border-left: 4px solid #0072ce;
+      padding-left: 11px;
+    }
+
+    @media (max-width: 768px) {
+      .col-md-3, .col-md-9 {
+        margin-bottom: 30px;
+      }
+      
+      .col-md-9 {
+        padding-left: 15px !important;
+      }
+    }
+  </style>
+
+</body>
+</html>

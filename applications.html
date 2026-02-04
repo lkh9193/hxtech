@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="">
 <meta name="author" content="M_Adnan">
-<title>Applications - HxTechnologies</title>
+<title>Applications - HX Technology</title>
 
 <!-- SLIDER REVOLUTION 4.x CSS SETTINGS -->
 <link rel="stylesheet" type="text/css" href="rs-plugin/css/settings.css" media="screen" />
@@ -46,7 +46,8 @@
     <div class="position-center-center">
       <div class="container">
         <h4>APPLICATIONS</h4>
-        <p>Precision measurement solutions tailored for your industry and application needs.</p>
+        <p>HX Technology supports a wide range of scientific and engineering applications by combining advanced imaging platforms, photonics technologies, and optical analysis tools. Our application-driven approach helps customers select and configure solutions that deliver reliable performance and meaningful results.</p>
+        <!-- <p>Photonics and imaging solutions tailored for scientific research and engineering applications.</p> -->
         <ol class="breadcrumb">
           <li><a href="index.html">Home</a></li>
           <li class="active">APPLICATIONS</li>
@@ -65,20 +66,23 @@
           <div class="col-md-3">
             <div style="border: 3px solid #003d99; border-radius: 4px; overflow: hidden;">
               <!-- Sidebar Header -->
-              <div style="background: #003d99; color: white; padding: 20px 15px; font-weight: 700; font-size: 16px; cursor: pointer;" class="sidebar-header" onclick="toggleApp(event, 'manufacturing')">
-                <i class="fa fa-industry" style="margin-right: 10px;"></i>Manufacturing
+              <div style="background: #003d99; color: white; padding: 20px 15px; font-weight: 700; font-size: 16px; cursor: pointer;" class="sidebar-header" onclick="toggleApp(event, 'microscopy')">
+                <i class="fa fa-microscope" style="margin-right: 10px;"></i>Microscopy & Imaging
               </div>
               
               <!-- Sidebar Items -->
               <div style="background: white;">
-                <div style="padding: 15px; border-bottom: 1px solid #e0e0e0; cursor: pointer;" class="sidebar-item active-app" onclick="switchApp('manufacturing')">
-                  Manufacturing
+                <div style="padding: 15px; border-bottom: 1px solid #e0e0e0; cursor: pointer;" class="sidebar-item active-app" onclick="switchApp('microscopy')">
+                  Microscopy & Imaging
                 </div>
-                <div style="padding: 15px; border-bottom: 1px solid #e0e0e0; cursor: pointer;" class="sidebar-item" onclick="switchApp('quality-control')">
-                  Quality Control
+                <div style="padding: 15px; border-bottom: 1px solid #e0e0e0; cursor: pointer;" class="sidebar-item" onclick="switchApp('spectroscopy')">
+                  Spectroscopy & Analysis
                 </div>
-                <div style="padding: 15px; cursor: pointer;" class="sidebar-item" onclick="switchApp('inspection-services')">
-                  Inspection Services
+                <div style="padding: 15px; border-bottom: 1px solid #e0e0e0; cursor: pointer;" class="sidebar-item" onclick="switchApp('laser-photonics')">
+                  Laser & Photonics
+                </div>
+                <div style="padding: 15px; cursor: pointer;" class="sidebar-item" onclick="switchApp('approach')">
+                  Our Approach
                 </div>
               </div>
             </div>
@@ -87,110 +91,125 @@
           <!-- Main Content -->
           <div class="col-md-9" style="padding-left: 40px;">
             
-            <!-- Manufacturing Section -->
-            <div id="manufacturing-content" class="app-content">
-              <h2 style="color: #003d99; margin-bottom: 20px;">Manufacturing</h2>
+            <!-- Overview -->
+            <!-- <div style="margin-bottom: 40px;">
+              <h2 style="color: #003d99; margin-bottom: 15px;">Applications</h2>
+              <p style="font-size: 16px; line-height: 1.8; color: #555;">
+                HX Technology supports a wide range of scientific and engineering applications by combining advanced imaging platforms, photonics technologies, and optical analysis tools. Our application-driven approach helps customers select and configure solutions that deliver reliable performance and meaningful results.
+              </p>
+            </div> -->
+            
+            <!-- Microscopy & Advanced Imaging Section -->
+            <div id="microscopy-content" class="app-content">
+              <h2 style="color: #003d99; margin-bottom: 20px;">Microscopy & Advanced Imaging</h2>
               <p style="font-size: 16px; line-height: 1.8; margin-bottom: 30px;">
-                HxTechnologies' precision measurement solutions are essential tools for modern manufacturing operations. Our comprehensive range of instruments and devices help manufacturers maintain strict quality standards, ensure product consistency, and optimize production processes. From dimensional verification to advanced testing, we provide the expertise and equipment needed for manufacturing excellence.
+                High-performance imaging solutions for life science and materials research, from routine microscopy to advanced in vivo and volumetric imaging.
               </p>
-              <h4 style="color: #333; margin: 30px 0 20px 0;">Key Applications in Manufacturing:</h4>
+
+              <h4 style="color: #333; margin: 30px 0 20px 0;">Typical Applications</h4>
               <ul style="font-size: 15px; line-height: 2; color: #555;">
-                <li><i class="fa fa-check" style="color: #0072ce; margin-right: 10px;"></i>Dimensional verification and component measurement on production lines</li>
-                <li><i class="fa fa-check" style="color: #0072ce; margin-right: 10px;"></i>Tolerance verification to ensure parts meet design specifications</li>
-                <li><i class="fa fa-check" style="color: #0072ce; margin-right: 10px;"></i>In-process quality control and first-piece inspection</li>
-                <li><i class="fa fa-check" style="color: #0072ce; margin-right: 10px;"></i>Material testing and validation for raw materials and components</li>
-                <li><i class="fa fa-check" style="color: #0072ce; margin-right: 10px;"></i>Calibration management and traceability documentation</li>
-                <li><i class="fa fa-check" style="color: #0072ce; margin-right: 10px;"></i>Statistical analysis and process improvement initiatives</li>
-                <li><i class="fa fa-check" style="color: #0072ce; margin-right: 10px;"></i>ISO 9001 compliance and quality management system support</li>
+                <li><i class="fa fa-check" style="color: #0072ce; margin-right: 10px;"></i>Live-cell and time-lapse imaging</li>
+                <li><i class="fa fa-check" style="color: #0072ce; margin-right: 10px;"></i>Super-resolution and sub-cellular imaging</li>
+                <li><i class="fa fa-check" style="color: #0072ce; margin-right: 10px;"></i>Light-sheet and 3D volumetric imaging</li>
+                <li><i class="fa fa-check" style="color: #0072ce; margin-right: 10px;"></i>Intravital and in vivo microscopy</li>
+                <li><i class="fa fa-check" style="color: #0072ce; margin-right: 10px;"></i>Neuroscience and developmental biology</li>
+                <li><i class="fa fa-check" style="color: #0072ce; margin-right: 10px;"></i>Materials and surface imaging</li>
               </ul>
-              <h4 style="color: #333; margin: 30px 0 20px 0;">Industry Focus:</h4>
-              <p style="font-size: 15px; color: #555;">
-                Automotive manufacturing, aerospace component production, electronics manufacturing, medical device fabrication, machinery and equipment production, and general industrial manufacturing.
+
+              <p style="font-size: 15px; color: #555; margin-top: 30px;">
+                HX Technology works closely with researchers to design imaging workflows that balance resolution, speed, phototoxicity, and long-term stability.
               </p>
             </div>
 
-            <!-- Quality Control Section -->
-            <div id="quality-control-content" class="app-content" style="display: none;">
-              <h2 style="color: #003d99; margin-bottom: 20px;">Quality Control</h2>
+            <!-- Spectroscopy & Optical Analysis Section -->
+            <div id="spectroscopy-content" class="app-content" style="display: none;">
+              <h2 style="color: #003d99; margin-bottom: 20px;">Spectroscopy & Optical Analysis</h2>
               <p style="font-size: 16px; line-height: 1.8; margin-bottom: 30px;">
-                Quality control is the foundation of excellence in modern industry. HxTechnologies provides advanced measurement and testing equipment specifically designed for quality assurance professionals. Our solutions enable systematic inspection, defect detection, and compliance verification throughout the manufacturing process and supply chain.
+                Reliable spectroscopy and optical measurement tools for accurate characterization of materials, samples, and optical systems.
               </p>
-              <h4 style="color: #333; margin: 30px 0 20px 0;">Key Applications in Quality Control:</h4>
+
+              <h4 style="color: #333; margin: 30px 0 20px 0;">Typical Applications</h4>
               <ul style="font-size: 15px; line-height: 2; color: #555;">
-                <li><i class="fa fa-check" style="color: #0072ce; margin-right: 10px;"></i>Incoming material inspection and supplier verification</li>
-                <li><i class="fa fa-check" style="color: #0072ce; margin-right: 10px;"></i>In-process inspection at critical manufacturing stages</li>
-                <li><i class="fa fa-check" style="color: #0072ce; margin-right: 10px;"></i>Final product inspection and acceptance testing</li>
-                <li><i class="fa fa-check" style="color: #0072ce; margin-right: 10px;"></i>Hardness testing and material property verification</li>
-                <li><i class="fa fa-check" style="color: #0072ce; margin-right: 10px;"></i>Batch testing and statistical sampling analysis</li>
-                <li><i class="fa fa-check" style="color: #0072ce; margin-right: 10px;"></i>Non-destructive testing and defect detection</li>
-                <li><i class="fa fa-check" style="color: #0072ce; margin-right: 10px;"></i>Regulatory compliance documentation and traceability</li>
+                <li><i class="fa fa-check" style="color: #0072ce; margin-right: 10px;"></i>Absorbance, transmission, and reflectance measurements</li>
+                <li><i class="fa fa-check" style="color: #0072ce; margin-right: 10px;"></i>Fluorescence and lifetime-based analysis</li>
+                <li><i class="fa fa-check" style="color: #0072ce; margin-right: 10px;"></i>Optical material characterization</li>
+                <li><i class="fa fa-check" style="color: #0072ce; margin-right: 10px;"></i>Quality control and process monitoring</li>
+                <li><i class="fa fa-check" style="color: #0072ce; margin-right: 10px;"></i>Teaching and research laboratory experiments</li>
               </ul>
-              <h4 style="color: #333; margin: 30px 0 20px 0;">Industry Focus:</h4>
-              <p style="font-size: 15px; color: #555;">
-                Food and beverage manufacturing, pharmaceutical production, medical device manufacturing, consumer electronics, automotive suppliers, and contract manufacturers requiring rigorous quality standards.
+
+              <p style="font-size: 15px; color: #555; margin-top: 30px;">
+                Our solutions are designed to be flexible, scalable, and suitable for both standalone measurements and integration into larger experimental setups.
               </p>
             </div>
 
-            <!-- Inspection Services Section -->
-            <div id="inspection-services-content" class="app-content" style="display: none;">
-              <h2 style="color: #003d99; margin-bottom: 20px;">Inspection Services</h2>
+            <!-- Laser & Photonics Applications Section -->
+            <div id="laser-photonics-content" class="app-content" style="display: none;">
+              <h2 style="color: #003d99; margin-bottom: 20px;">Laser & Photonics Applications</h2>
               <p style="font-size: 16px; line-height: 1.8; margin-bottom: 30px;">
-                HxTechnologies offers professional inspection services to verify product quality, ensure compliance, and validate manufacturing processes. Our certified inspectors use state-of-the-art equipment and established methodologies to provide objective, accurate inspection results. We deliver comprehensive inspection solutions from initial concept validation through final product delivery.
+                Precision laser and photonics solutions supporting advanced research, imaging excitation, and micro- and nano-scale fabrication.
               </p>
-              <h4 style="color: #333; margin: 30px 0 20px 0;">Key Inspection Services:</h4>
+
+              <h4 style="color: #333; margin: 30px 0 20px 0;">Typical Applications</h4>
               <ul style="font-size: 15px; line-height: 2; color: #555;">
-                <li><i class="fa fa-check" style="color: #0072ce; margin-right: 10px;"></i>Third-party dimensional verification and inspection</li>
-                <li><i class="fa fa-check" style="color: #0072ce; margin-right: 10px;"></i>Material composition analysis and testing</li>
-                <li><i class="fa fa-check" style="color: #0072ce; margin-right: 10px;"></i>Surface finish and roughness measurement</li>
-                <li><i class="fa fa-check" style="color: #0072ce; margin-right: 10px;"></i>Prototype and first-article inspection (FAI)</li>
-                <li><i class="fa fa-check" style="color: #0072ce; margin-right: 10px;"></i>Process capability and Cpk/Ppk studies</li>
-                <li><i class="fa fa-check" style="color: #0072ce; margin-right: 10px;"></i>Calibration verification and certification</li>
-                <li><i class="fa fa-check" style="color: #0072ce; margin-right: 10px;"></i>Compliance audits and certification support</li>
-                <li><i class="fa fa-check" style="color: #0072ce; margin-right: 10px;"></i>Detailed inspection reports and trend analysis</li>
+                <li><i class="fa fa-check" style="color: #0072ce; margin-right: 10px;"></i>Fluorescence and nonlinear microscopy excitation</li>
+                <li><i class="fa fa-check" style="color: #0072ce; margin-right: 10px;"></i>Two-photon and multi-photon imaging</li>
+                <li><i class="fa fa-check" style="color: #0072ce; margin-right: 10px;"></i>Micro- and nano-fabrication</li>
+                <li><i class="fa fa-check" style="color: #0072ce; margin-right: 10px;"></i>Photonic device research and testing</li>
+                <li><i class="fa fa-check" style="color: #0072ce; margin-right: 10px;"></i>Optical system development and OEM integration</li>
               </ul>
-              <h4 style="color: #333; margin: 30px 0 20px 0;">Industry Focus:</h4>
-              <p style="font-size: 15px; color: #555;">
-                Aerospace and defense industries, medical device manufacturers, automotive OEMs and suppliers, contract manufacturers, engineering firms, and companies requiring objective third-party verification and certification.
+
+              <p style="font-size: 15px; color: #555; margin-top: 30px;">
+                HX Technology assists customers in selecting laser sources that meet performance, safety, and integration requirements, ensuring reliable operation within complex optical systems.
               </p>
             </div>
 
-          </div>
-        </div>
-      </div>
-    </section>
+            <!-- Our Approach Section -->
+            <div id="approach-content" class="app-content" style="display: none;">
+              <h2 style="color: #003d99; margin-bottom: 20px;">Our Application-Driven Approach</h2>
+              <p style="font-size: 16px; line-height: 1.8; margin-bottom: 30px;">
+                Every application comes with unique technical requirements. HX Technology begins each engagement by understanding the experimental goals, constraints, and future expansion plans before recommending a solution.
+              </p>
 
-    <!-- Why Choose PrecisionTech -->
-    <section style="background: #f5f5f5; padding: 80px 0;">
-      <div class="container">
-        <h2 class="text-center" style="margin-bottom: 60px; color: #003d99;">Why Choose HxTechnologies for Your Applications?</h2>
-        <div class="row">
-          <div class="col-md-3 text-center" style="margin-bottom: 40px;">
-            <div style="font-size: 48px; color: #0072ce; margin-bottom: 15px;">
-              <i class="fa fa-crosshairs"></i>
+              <p style="font-size: 16px; line-height: 1.8; margin-bottom: 20px;">
+                This ensures that customers receive systems that are not only technically capable, but also practical, scalable, and well supported throughout their lifecycle.
+              </p>
+
+              <h4 style="color: #333; margin: 30px 0 20px 0;">Our Process</h4>
+              <div style="margin: 20px 0;">
+                <div style="display: flex; margin-bottom: 20px;">
+                  <div style="background: #003d99; color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; margin-right: 20px; flex-shrink: 0;">1</div>
+                  <div>
+                    <h5 style="color: #333; margin: 0 0 10px 0;">Understand Your Goals</h5>
+                    <p style="color: #555; margin: 0;">We listen to your research objectives, experimental requirements, and timeline to understand the full scope of your project.</p>
+                  </div>
+                </div>
+
+                <div style="display: flex; margin-bottom: 20px;">
+                  <div style="background: #003d99; color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; margin-right: 20px; flex-shrink: 0;">2</div>
+                  <div>
+                    <h5 style="color: #333; margin: 0 0 10px 0;">Recommend Solutions</h5>
+                    <p style="color: #555; margin: 0;">Based on your requirements, we recommend a curated combination of tools from our partner portfolio that best fit your application.</p>
+                  </div>
+                </div>
+
+                <div style="display: flex; margin-bottom: 20px;">
+                  <div style="background: #003d99; color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; margin-right: 20px; flex-shrink: 0;">3</div>
+                  <div>
+                    <h5 style="color: #333; margin: 0 0 10px 0;">Configure & Integrate</h5>
+                    <p style="color: #555; margin: 0;">We ensure components work together seamlessly, providing configuration guidance and integration support to build your complete system.</p>
+                  </div>
+                </div>
+
+                <div style="display: flex;">
+                  <div style="background: #003d99; color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; margin-right: 20px; flex-shrink: 0;">4</div>
+                  <div>
+                    <h5 style="color: #333; margin: 0 0 10px 0;">Support & Scale</h5>
+                    <p style="color: #555; margin: 0;">We provide onboarding, training, and ongoing support to help your team succeed, with flexibility to expand as your research evolves.</p>
+                  </div>
+                </div>
+              </div>
             </div>
-            <h4>Precision & Accuracy</h4>
-            <p style="color: #666;">State-of-the-art equipment calibrated to the highest standards ensures accurate, reliable measurement results for your critical applications.</p>
-          </div>
-          <div class="col-md-3 text-center" style="margin-bottom: 40px;">
-            <div style="font-size: 48px; color: #0072ce; margin-bottom: 15px;">
-              <i class="fa fa-cogs"></i>
-            </div>
-            <h4>Expert Support</h4>
-            <p style="color: #666;">Our team of certified professionals provides comprehensive training, technical support, and consultation to optimize your measurement processes.</p>
-          </div>
-          <div class="col-md-3 text-center" style="margin-bottom: 40px;">
-            <div style="font-size: 48px; color: #0072ce; margin-bottom: 15px;">
-              <i class="fa fa-check-circle"></i>
-            </div>
-            <h4>Compliance Ready</h4>
-            <p style="color: #666;">Our solutions support ISO 9001, AS9100, ISO 13485, and other industry standards, ensuring your compliance requirements are met.</p>
-          </div>
-          <div class="col-md-3 text-center" style="margin-bottom: 40px;">
-            <div style="font-size: 48px; color: #0072ce; margin-bottom: 15px;">
-              <i class="fa fa-handshake-o"></i>
-            </div>
-            <h4>Partnership Approach</h4>
-            <p style="color: #666;">We view every customer as a long-term partner, committed to understanding your unique needs and delivering customized solutions.</p>
+
           </div>
         </div>
       </div>
@@ -213,9 +232,10 @@
   <script>
     function switchApp(app) {
       // Hide all content
-      document.getElementById('manufacturing-content').style.display = 'none';
-      document.getElementById('quality-control-content').style.display = 'none';
-      document.getElementById('inspection-services-content').style.display = 'none';
+      document.getElementById('microscopy-content').style.display = 'none';
+      document.getElementById('spectroscopy-content').style.display = 'none';
+      document.getElementById('laser-photonics-content').style.display = 'none';
+      document.getElementById('approach-content').style.display = 'none';
       
       // Remove active class from all items
       document.querySelectorAll('.sidebar-item').forEach(item => {
@@ -230,9 +250,10 @@
       
       // Update sidebar header
       const headerMap = {
-        'manufacturing': '<i class="fa fa-industry" style="margin-right: 10px;"></i>Manufacturing',
-        'quality-control': '<i class="fa fa-flask" style="margin-right: 10px;"></i>Quality Control',
-        'inspection-services': '<i class="fa fa-search" style="margin-right: 10px;"></i>Inspection Services'
+        'microscopy': '<i class="fa fa-microscope" style="margin-right: 10px;"></i>Microscopy & Imaging',
+        'spectroscopy': '<i class="fa fa-flask" style="margin-right: 10px;"></i>Spectroscopy & Analysis',
+        'laser-photonics': '<i class="fa fa-lightbulb-o" style="margin-right: 10px;"></i>Laser & Photonics',
+        'approach': '<i class="fa fa-cogs" style="margin-right: 10px;"></i>Our Approach'
       };
       document.querySelector('.sidebar-header').innerHTML = headerMap[app];
     }
@@ -240,11 +261,12 @@
     // Handle hash-based navigation on page load
     window.addEventListener('load', function() {
       let hash = window.location.hash.substring(1);
-      if (hash && (hash === 'manufacturing' || hash === 'quality-control' || hash === 'inspection-services')) {
+      if (hash && (hash === 'microscopy' || hash === 'spectroscopy' || hash === 'laser-photonics' || hash === 'approach')) {
         // Hide all content
-        document.getElementById('manufacturing-content').style.display = 'none';
-        document.getElementById('quality-control-content').style.display = 'none';
-        document.getElementById('inspection-services-content').style.display = 'none';
+        document.getElementById('microscopy-content').style.display = 'none';
+        document.getElementById('spectroscopy-content').style.display = 'none';
+        document.getElementById('laser-photonics-content').style.display = 'none';
+        document.getElementById('approach-content').style.display = 'none';
         
         // Remove active class from all items
         document.querySelectorAll('.sidebar-item').forEach(item => {
@@ -256,15 +278,17 @@
         
         // Add active class to correct sidebar item
         const items = document.querySelectorAll('.sidebar-item');
-        if (hash === 'manufacturing') items[0].classList.add('active-app');
-        else if (hash === 'quality-control') items[1].classList.add('active-app');
-        else if (hash === 'inspection-services') items[2].classList.add('active-app');
+        if (hash === 'microscopy') items[0].classList.add('active-app');
+        else if (hash === 'spectroscopy') items[1].classList.add('active-app');
+        else if (hash === 'laser-photonics') items[2].classList.add('active-app');
+        else if (hash === 'approach') items[3].classList.add('active-app');
         
         // Update sidebar header
         const headerMap = {
-          'manufacturing': '<i class="fa fa-industry" style="margin-right: 10px;"></i>Manufacturing',
-          'quality-control': '<i class="fa fa-flask" style="margin-right: 10px;"></i>Quality Control',
-          'inspection-services': '<i class="fa fa-search" style="margin-right: 10px;"></i>Inspection Services'
+          'microscopy': '<i class="fa fa-microscope" style="margin-right: 10px;"></i>Microscopy & Imaging',
+          'spectroscopy': '<i class="fa fa-flask" style="margin-right: 10px;"></i>Spectroscopy & Analysis',
+          'laser-photonics': '<i class="fa fa-lightbulb-o" style="margin-right: 10px;"></i>Laser & Photonics',
+          'approach': '<i class="fa fa-cogs" style="margin-right: 10px;"></i>Our Approach'
         };
         document.querySelector('.sidebar-header').innerHTML = headerMap[hash];
       }
@@ -299,6 +323,9 @@
       .col-md-9 {
         padding-left: 15px !important;
       }
+    }
+    .sub-bnr {
+      background: url(../images/banner/sub-banner-applications.jpeg) no-repeat;
     }
   </style>
 
