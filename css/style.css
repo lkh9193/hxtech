@@ -4422,9 +4422,9 @@ main {
 /* Logo Grid Container */
 .logo-grid {
   display: grid;
-  grid-template-columns: repeat(6, 1fr); /* 6 logos per row */
+  grid-template-columns: repeat(4, 1fr); /* 4 logos per row */
   column-gap: 25px;
-  row-gap: 15px;
+  row-gap: 8px;
   justify-items: center;
   align-items: center;
   padding: 0 20px;
@@ -4443,24 +4443,24 @@ main {
   transform: scale(1.05);
 }
 
-/* Responsive for tablets: still 6 per row, just smaller */
+/* Responsive for tablets: 3 per row */
 @media (max-width: 991px) {
   .logo-grid {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     column-gap: 20px;
-    row-gap: 12px;
+    row-gap: 6px;
   }
   .logo-item img {
     max-width: 150px;
   }
 }
 
-/* Responsive for small screens: stack in 3 per row */
+/* Responsive for small screens: stack in 2 per row */
 @media (max-width: 768px) {
   .logo-grid {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     column-gap: 15px;
-    row-gap: 10px;
+    row-gap: 5px;
   }
   .logo-item img {
     max-width: 120px;
@@ -4472,7 +4472,7 @@ main {
   .logo-grid {
     grid-template-columns: repeat(2, 1fr);
     column-gap: 10px;
-    row-gap: 8px;
+    row-gap: 4px;
   }
   .logo-item img {
     max-width: 100px;
