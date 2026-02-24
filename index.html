@@ -521,16 +521,16 @@
             
             <!-- Post 1 -->
             <li class="col-md-6">
-              <div class="date"> <span>March</span> <span class="huge">31</span> </div>
-              <a href="#.">HX Technology Appointed as Exclusive Distributor of Nanoscribe</a>
-              <p>HX Technology is now the exclusive distributor of Nanoscribe, a world leader in two-photon polymerization (2PP) 3D micro- and nano-printing systems. This partnership enables HX to provide localized sales, application support, and technical services for Nanoscribe users across the region.</p>
+              <div class="date"> <span>March</span> <span class="huge">1</span> </div>
+              <a href="#.">HX Technology Appointed as Exclusive Distributor of Oxxius</a>
+              <p>HX Technology has been appointed as the exclusive distributor of Oxxius in Singapore. Oxxius, headquartered in France, designs and manufactures high-performance DPSS and laser diode modules across UV–Vis–NIR, including single-frequency lasers, high-power diode lasers, and compact multi-color laser systems for scientific and OEM applications.</p>
               <span>By <strong>HX Technology Team</strong></span> </li>
             
             <!-- Post 2 -->
             <li class="col-md-6">
-              <div class="date"> <span>March</span> <span class="huge">31</span> </div>
-              <a href="#.">Distribution Partnership Announcement — CSR Biotech</a>
-              <p>HX Technology has been appointed as a distributor for CSR Biotech for Singapore and Malaysia, expanding our capabilities in advanced life science imaging and microscopy solutions.</p>
+              <div class="date"> <span>Jan</span> <span class="huge">26-27</span> </div>
+              <a href="#.">International Meeting on Aging and Regenerative Medicine at NTU LKC</a>
+              <p>HX Technology participated as an exhibitor at the International Meeting on Aging and Regenerative Medicine held at NTU Lee Kong Chian School of Medicine. In partnership with IVIM Technology, we showcased advanced intravital and in vivo imaging solutions, together with our microscopy, laser, and photonics platforms for life science research.</p>
               <span>By <strong>HX Technology Team</strong></span> </li>
           </ul>
         </div>
@@ -553,15 +553,15 @@
       <div class="logo-item">
         <img src="images/partner/CSR_Biotech_600x300.png" alt="Andor" />
       </div>
-      <div class="logo-item">
+      <!-- <div class="logo-item">
         <img src="images/partner/PRIOR_600x300.png" alt="PicoQuant" />
-      </div>
+      </div> -->
       <div class="logo-item">
         <img src="images/partner/ivim_technology_600x300.png" alt="PicoQuant" />
       </div>
-      <div class="logo-item">
+      <!-- <div class="logo-item">
         <img src="images/partner/novel_600x300.png" alt="PicoQuant" />
-      </div>
+      </div> -->
       <div class="logo-item">
         <img src="images/partner/YSL_600x300.png" alt="PicoQuant" />
       </div>
@@ -590,9 +590,9 @@
       <div class="logo-item">
         <img src="images/partner/transcend_vivoscope_600x300.png" alt="Nikon" />
       </div>
-      <div class="logo-item">
+      <!-- <div class="logo-item">
         <img src="images/partner/phaseview_600x300.png" alt="Andor" />
-      </div>
+      </div> -->
       <div class="logo-item">
         <img src="images/partner/smaview_600x300.png" alt="PicoQuant" />
       </div>
@@ -625,5 +625,79 @@
   <script src="js/owl.carousel.min.js"></script>
   <script src="js/load-includes.js"></script>
   <script src="js/main.js"></script>
+
+  <!-- Carousel Auto-Scroll -->
+  <script>
+    function initCarousel() {
+      const logoGrid = document.querySelector('.logo-grid');
+      if (!logoGrid) return;
+
+      // Clone all items for seamless looping
+      const items = Array.from(logoGrid.querySelectorAll('.logo-item'));
+      items.forEach(item => {
+        logoGrid.appendChild(item.cloneNode(true));
+      });
+
+      let scrollSpeed = 1; // pixels per frame
+      let isScrolling = true;
+
+      // Determine scroll speed based on viewport
+      function updateScrollSpeed() {
+        if (window.innerWidth <= 480) {
+          scrollSpeed = 0.4;
+        } else if (window.innerWidth <= 768) {
+          scrollSpeed = 0.6;
+        } else if (window.innerWidth <= 991) {
+          scrollSpeed = 0.75;
+        } else {
+          scrollSpeed = 0.9;
+        }
+      }
+
+      updateScrollSpeed();
+
+      // Pause on hover
+      logoGrid.addEventListener('mouseenter', () => {
+        isScrolling = false;
+      });
+
+      logoGrid.addEventListener('mouseleave', () => {
+        isScrolling = true;
+      });
+
+      // Auto-scroll animation
+      function scroll() {
+        if (isScrolling) {
+          logoGrid.scrollLeft += scrollSpeed;
+
+          // Reset scroll when we reach the middle (seamless loop)
+          if (logoGrid.scrollLeft >= logoGrid.scrollWidth / 2) {
+            logoGrid.scrollLeft = 0;
+          }
+        }
+        requestAnimationFrame(scroll);
+      }
+
+      // Start scrolling
+      scroll();
+
+      // Handle visibility changes
+      document.addEventListener('visibilitychange', () => {
+        if (!document.hidden) {
+          logoGrid.scrollLeft = 0;
+        }
+      });
+
+      // Handle window resize
+      window.addEventListener('resize', updateScrollSpeed);
+    }
+
+    // Initialize when DOM is ready
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', initCarousel);
+    } else {
+      initCarousel();
+    }
+  </script>
 </body>
 </html>

@@ -4419,60 +4419,81 @@ main {
   margin: 0 auto 40px auto;
 }
 
-/* Logo Grid Container */
+/* Logo Grid Container - Horizontal Scroll Carousel */
 .logo-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 4 logos per row */
-  column-gap: 25px;
-  row-gap: 8px;
-  justify-items: center;
+  display: flex;
+  gap: 40px;
+  padding: 20px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+  white-space: nowrap;
   align-items: center;
-  padding: 0 20px;
 }
 
 /* Logo Items */
+.logo-item {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 200px;
+  height: 120px;
+}
+
 .logo-item img {
   width: 100%;
   max-width: 180px;
-  aspect-ratio: 1 / 1; /* Keeps image square */
+  height: auto;
   object-fit: contain;
   transition: transform 0.3s ease;
 }
 
 .logo-item img:hover {
-  transform: scale(1.05);
+  transform: scale(1.1);
 }
 
-/* Responsive for tablets: 3 per row */
+/* Hide scrollbar */
+.logo-grid::-webkit-scrollbar {
+  display: none;
+}
+
+/* Responsive for tablets */
 @media (max-width: 991px) {
   .logo-grid {
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 20px;
-    row-gap: 6px;
+    gap: 30px;
+  }
+  .logo-item {
+    min-width: 150px;
+    height: 100px;
   }
   .logo-item img {
     max-width: 150px;
   }
 }
 
-/* Responsive for small screens: stack in 2 per row */
+/* Responsive for small screens */
 @media (max-width: 768px) {
   .logo-grid {
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 15px;
-    row-gap: 5px;
+    gap: 20px;
+  }
+  .logo-item {
+    min-width: 120px;
+    height: 80px;
   }
   .logo-item img {
     max-width: 120px;
   }
 }
 
-/* Responsive for phones: stack in 2 per row */
+/* Responsive for phones */
 @media (max-width: 480px) {
   .logo-grid {
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 10px;
-    row-gap: 4px;
+    gap: 15px;
+  }
+  .logo-item {
+    min-width: 100px;
+    height: 70px;
   }
   .logo-item img {
     max-width: 100px;
