@@ -632,26 +632,38 @@
       const logoGrid = document.querySelector('.logo-grid');
       if (!logoGrid) return;
 
-      // Clone all items for seamless looping
-      const items = Array.from(logoGrid.querySelectorAll('.logo-item'));
-      items.forEach(item => {
-        logoGrid.appendChild(item.cloneNode(true));
-      });
+      // Get original items
+      const originalItems = Array.from(logoGrid.querySelectorAll('.logo-item'));
+      const originalItemsCount = originalItems.length;
 
-      let scrollSpeed = 1; // pixels per frame
+      // Clone items 10x for truly seamless infinite loop
+      for (let i = 0; i < 10; i++) {
+        originalItems.forEach(item => {
+          logoGrid.appendChild(item.cloneNode(true));
+        });
+      }
+
+      let scrollSpeed = 0.9; // pixels per frame
       let isScrolling = true;
+      let singleSetWidth = 0;
+      let maxScroll = 0;
 
       // Determine scroll speed based on viewport
       function updateScrollSpeed() {
         if (window.innerWidth <= 480) {
-          scrollSpeed = 0.4;
+          scrollSpeed = 0.5;
         } else if (window.innerWidth <= 768) {
-          scrollSpeed = 0.6;
+          scrollSpeed = 0.7;
         } else if (window.innerWidth <= 991) {
-          scrollSpeed = 0.75;
+          scrollSpeed = 0.8;
         } else {
           scrollSpeed = 0.9;
         }
+        
+        // Calculate width of a single set of items
+        singleSetWidth = logoGrid.scrollWidth / 11; // 1 original + 10 clones
+        // Reset at 50% through to avoid reaching the end
+        maxScroll = singleSetWidth * 5;
       }
 
       updateScrollSpeed();
@@ -665,13 +677,13 @@
         isScrolling = true;
       });
 
-      // Auto-scroll animation
+      // Auto-scroll animation with infinite loop
       function scroll() {
         if (isScrolling) {
           logoGrid.scrollLeft += scrollSpeed;
 
-          // Reset scroll when we reach the middle (seamless loop)
-          if (logoGrid.scrollLeft >= logoGrid.scrollWidth / 2) {
+          // Seamlessly reset when halfway through
+          if (logoGrid.scrollLeft >= maxScroll) {
             logoGrid.scrollLeft = 0;
           }
         }

@@ -1491,7 +1491,7 @@ select.bs-select-hidden, select.selectpicker {
 	margin: -15px;
 	line-height: 32px;
 	font-size: 16pt;
-	font-family: Helvetica, Arial, serif;
+	font-family: 'Montserrat', sans-serif;
 }
 .lighter-next, .lighter-prev {
 	display: none;
@@ -1501,7 +1501,7 @@ select.bs-select-hidden, select.selectpicker {
 	margin: -20px 0;
 	line-height: 34px;
 	font-size: 32pt;
-	font-family: Times, serif;
+	font-family: 'Montserrat', sans-serif;
 }
 .lighter-next {
 	right: 40px;
