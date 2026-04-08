@@ -1,80 +1,54 @@
 <!-- ====== HEADER ====== -->
 <header class="site-header">
+
   <div class="fixed-header">
     <div class="container">
 
       <!-- Logo -->
       <div class="logo">
         <a href="index.html">
-          <img class="img-responsive" src="images/hxtech-logo.png" alt="Company Logo">
+          <img class="img-responsive" src="images/hxtech-logo.png" alt="HX Technology">
         </a>
       </div>
 
-      <!-- Navigation -->
-      <nav class="navbar ownmenu">
+      <!-- Bootstrap Navbar -->
+      <nav class="navbar navbar-default">
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-open-btn" aria-expanded="false">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#site-nav" aria-expanded="false">
             <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"><i class="fa fa-navicon"></i></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
           </button>
         </div>
-
-        <!-- NAVIGATION LINKS -->
-        <div class="collapse navbar-collapse" id="nav-open-btn">
+        <div class="collapse navbar-collapse" id="site-nav">
           <ul class="nav navbar-nav navbar-right">
-
-            <!-- Home -->
-            <li><a href="index.html">Home</a></li>
-
-            <!-- About -->
-            <li><a href="about.html">About</a></li>
-
-            <!-- Products Dropdown -->
-            <li class="dropdown">
+            <li class="nav-home"><a href="index.html">Home</a></li>
+            <li class="nav-about"><a href="about.html">About</a></li>
+            <li class="dropdown nav-products">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                Products <b class="caret"></b>
+                Products <span class="caret"></span>
               </a>
               <ul class="dropdown-menu">
-                <li><a href="product-microscopy.html">Microscopy & Imaging</a></li>
-                <li><a href="product-spectroscopy.html">Spectroscopy & Analysis</a></li>
-                <li><a href="product-photonics.html">Photonics & Fabrication</a></li>
-                <li><a href="product-lasers.html">Lasers & Light Sources</a></li>
-                <li><a href="product-detectors.html">Detectors & Cameras</a></li>
-                <li><a href="product-automation.html">Automation & Motion</a></li>
+                <li><a href="product-microscopy.html">Microscopy &amp; Imaging</a></li>
+                <li><a href="product-spectroscopy.html">Spectroscopy &amp; Analysis</a></li>
+                <li><a href="product-photonics.html">Photonics &amp; Fabrication</a></li>
+                <li><a href="product-lasers.html">Lasers &amp; Light Sources</a></li>
+                <li><a href="product-detectors.html">Detectors &amp; Cameras</a></li>
               </ul>
             </li>
-
-            <!-- Applications Dropdown -->
-            <li class="dropdown">
+            <li class="dropdown nav-applications">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                Applications <b class="caret"></b>
+                Applications <span class="caret"></span>
               </a>
               <ul class="dropdown-menu">
-                <li><a href="applications.html#microscopy">Microscopy & Imaging</a></li>
-                <li><a href="applications.html#spectroscopy">Spectroscopy & Analysis</a></li>
-                <li><a href="applications.html#laser-photonics">Laser & Photonics</a></li>
+                <li><a href="applications.html#microscopy">Microscopy &amp; Imaging</a></li>
+                <li><a href="applications.html#spectroscopy">Spectroscopy &amp; Analysis</a></li>
+                <li><a href="applications.html#laser-photonics">Laser &amp; Photonics</a></li>
                 <li><a href="applications.html#approach">Our Approach</a></li>
               </ul>
             </li>
-
-            <!-- News -->
-            <!-- <li><a href="news.html">News</a></li> -->
-
-            <!-- Resources Dropdown -->
-            <!-- <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                Resources <b class="caret"></b>
-              </a>
-              <ul class="dropdown-menu">
-                <li><a href="resources.html#company-info">Company Info</a></li>
-                <li><a href="resources.html#technical-support">Technical Support</a></li>
-                <li><a href="resources.html#contact-sales">Contact Sales</a></li>
-              </ul>
-            </li> -->
-
-            <!-- Contact Us -->
-            <li><a href="contact_us.html">Contact Us</a></li>
-
+            <li class="nav-contact"><a href="contact_us.html">Contact Us</a></li>
           </ul>
         </div>
       </nav>
@@ -83,371 +57,263 @@
   </div>
 </header>
 
-<!-- ====== FIXED HEADER STYLING ====== -->
+<!-- ====== HEADER STYLES ====== -->
 <style>
-/* Fixed header container */
+/* === FIXED HEADER SHELL === */
 .fixed-header {
   position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-  background: #fff;
+  top: 0; left: 0; right: 0;
   z-index: 9999;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-  padding: 12px 0;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
 
 body {
-  padding-top: 60px;
+  padding-top: 80px;
 }
 
 .site-header .container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  min-height: 70px;
+  padding-top: 8px;
+  padding-bottom: 8px;
 }
 
+@media (min-width: 1200px) {
+  .site-header .container {
+    width: 100%;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+
+/* === LOGO === */
 .site-header .logo {
   flex-shrink: 0;
-  margin-right: 40px;
+  margin-right: 72px;
+  line-height: 0;
 }
-
 .site-header .logo img {
-  max-height: 50px;
-  display: block;
-  transition: opacity 0.3s ease;
+  height: 68.64px;
+  width: auto;
 }
 
-.site-header .logo a:hover img {
-  opacity: 0.85;
-}
-
-.navbar {
+/* === BURGER BUTTON — override responsive.css 40x40 icon-bar hack === */
+.site-header .navbar-toggle {
+  padding: 8px 10px;
   margin: 0;
-  padding: 0;
-  display: flex;
-  align-items: center;
-  flex-grow: 1;
-  margin-left: auto;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background: transparent;
 }
-
-.navbar.ownmenu {
-  display: flex;
-  align-items: center;
+.site-header .navbar-toggle:hover,
+.site-header .navbar-toggle:focus {
+  background: #f5f5f5;
+  outline: none;
 }
-
-.navbar-header {
-  display: none;
-}
-
-.navbar-collapse {
-  display: flex !important;
-  flex-grow: 1;
+.site-header .navbar-toggle .icon-bar {
+  display: block !important;
+  width: 22px !important;
+  height: 2px !important;
+  border: none !important;
+  border-radius: 2px !important;
+  background: #555 !important;
   padding: 0 !important;
-  margin: 0 !important;
+  margin: 4px 0 !important;
+  line-height: normal !important;
 }
 
-.navbar-nav {
-  display: flex;
-  list-style: none;
-  margin: 0 !important;
-  padding: 0;
-  margin-left: auto;
-}
-
-.navbar-nav > li {
-  position: relative;
+/* === NAVBAR — let Bootstrap handle responsive collapse === */
+.site-header .navbar {
   margin: 0;
   padding: 0;
+  border: none;
+  background: transparent;
+  box-shadow: none;
+  flex-grow: 1;
+  min-height: 0;
+  border-radius: 0;
 }
 
-.navbar-nav > li > a {
-  font-size: 14px;
-  font-weight: 600;
-  padding: 15px 16px;
-  color: #333;
-  transition: all 0.3s ease;
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  line-height: 1;
-  letter-spacing: 0.5px;
+@media (min-width: 992px) {
+  .site-header .navbar {
+    margin-left: auto;
+    flex-grow: 0;
+  }
+
+  .site-header .navbar-nav.navbar-right {
+    margin-right: 0;
+  }
+}
+
+.site-header .navbar-nav > li > a {
   position: relative;
-  height: 48px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #2d3a4b;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  padding: 15px 0;
+  margin: 0 10px;
+  transition: color 0.2s;
+}
+.site-header .navbar-nav > li > a:hover,
+.site-header .navbar-nav > li > a:focus {
+  color: #0072ce;
+  background: transparent;
 }
 
-.navbar-nav > li > a::after {
-  content: '';
+.site-header .navbar-nav > li > a::after {
+  content: "";
   position: absolute;
-  bottom: 0;
-  left: 16px;
-  right: 16px;
-  height: 2px;
+  left: 0;
+  bottom: -1px;
+  width: 100%;
+  height: 3px;
   background: #0072ce;
   transform: scaleX(0);
-  transform-origin: right;
-  transition: transform 0.3s ease;
-  pointer-events: none;
+  transform-origin: left center;
+  transition: transform 0.22s ease;
 }
 
-.navbar-nav > li > a:hover::after,
-.navbar-nav > li.active > a::after {
+.site-header .navbar-nav > li:hover > a::after,
+.site-header .navbar-nav > li > a:hover::after,
+.site-header .navbar-nav > li.active > a::after,
+.site-header .navbar-nav > li.open > a::after {
   transform: scaleX(1);
-  transform-origin: left;
 }
 
-.navbar-nav > li > a:hover,
-.navbar-nav > li.active > a {
+.site-header .navbar-nav > li.active > a,
+.site-header .navbar-nav > li.active > a:hover,
+.site-header .navbar-nav > li.open > a,
+.site-header .navbar-nav > li.open > a:hover,
+.site-header .navbar-nav > li.open > a:focus {
   color: #0072ce;
+  background: transparent;
 }
 
-.caret {
-  display: inline-block;
-  width: 0;
-  height: 0;
-  margin-left: 6px;
-  vertical-align: 0.255em;
-  border-top: 4px dashed;
-  border-right: 4px solid transparent;
-  border-left: 4px solid transparent;
-  transition: transform 0.3s ease;
-}
-
-.navbar-nav > .dropdown > a .caret {
-  border-top-color: currentColor;
-}
-
-.navbar-nav > .dropdown:hover > a .caret {
-  transform: rotate(180deg);
-}
-
-/* Override ownmenu dropdown-menu */
-.navbar-nav > .dropdown {
-  position: relative;
-}
-
-.navbar-nav > .dropdown .dropdown-menu {
-  position: absolute !important;
-  top: calc(100% + 2px) !important;
-  left: 0 !important;
-  min-width: 240px !important;
-  padding: 12px 0 !important;
-  border-radius: 4px !important;
-  border: 1px solid #e0e0e0 !important;
-  background: white !important;
-  display: none !important;
-  z-index: 1001 !important;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.12) !important;
-  list-style: none !important;
-  margin: 0 !important;
-  margin-top: 0 !important;
-  float: none !important;
-  width: auto !important;
-  animation: dropdownSlide 0.2s ease-out !important;
-  overflow: hidden !important;
-}
-
-@keyframes dropdownSlide {
-  from {
-    opacity: 0;
-    transform: translateY(-10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.navbar-nav > .dropdown:hover > .dropdown-menu {
-  display: block !important;
-}
-
-.navbar-nav > .dropdown .dropdown-menu > li > a {
-  display: block;
-  padding: 12px 20px !important;
-  font-size: 14px;
-  color: #444;
-  text-decoration: none;
-  white-space: nowrap;
-  line-height: 20px;
-  background: none !important;
-  position: relative !important;
-  z-index: 2 !important;
-  transition: all 0.2s ease !important;
-  letter-spacing: 0.3px;
-}
-
-.navbar-nav > .dropdown .dropdown-menu > li > a:before,
-.navbar-nav > .dropdown .dropdown-menu > li > a:after {
-  display: none !important;
-}
-
-/* Override ownmenu styles */
-.ownmenu .nav .dropdown-menu li a:before {
-  display: none !important;
-}
-
-.ownmenu .nav .dropdown-menu li a:after {
-  display: none !important;
-  content: none !important;
-}
-
-.ownmenu .dropdown-menu li a:after {
-  display: none !important;
-  content: none !important;
-}
-
-.navbar-nav > .dropdown .dropdown-menu > li > a::after {
-  display: none !important;
-}
-
-.navbar-nav > .dropdown .dropdown-menu > li > a:hover {
-  background: #f8f9fa !important;
-  color: #0072ce;
-}
-
-.navbar-nav > .dropdown .dropdown-menu > li {
-  list-style: none !important;
-  margin: 0 !important;
-  padding: 0 !important;
-  position: relative !important;
-  z-index: 2 !important;
-  border-bottom: 1px solid #f0f0f0;
-  overflow: hidden;
-}
-
-.navbar-nav > .dropdown .dropdown-menu > li:last-child {
-  border-bottom: none;
-}
-
-.navbar-nav > .dropdown .dropdown-menu > li > a:hover {
-  background: #f8f9fa !important;
-  color: #0072ce;
-  padding-left: 20px !important;
-}
-
-/* Mobile Responsive */
-@media (max-width: 768px) {
-  .site-header .logo {
-    margin-right: 20px;
-  }
-
-  .navbar-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-  }
-
-  .navbar-toggle {
-    background: none;
-    border: none;
-    padding: 8px;
-    cursor: pointer;
-    float: none;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .navbar-toggle:hover {
-    opacity: 0.7;
-  }
-
-  .icon-bar {
-    display: block;
-    width: 24px;
-    height: 2px;
-    background-color: #333;
-    margin: 4px 0;
-    transition: all 0.3s ease;
-    border-radius: 2px;
-  }
-
-  .navbar-toggle.collapsed .icon-bar:nth-child(2) {
-    opacity: 1;
-  }
-
-  .navbar-collapse {
-    position: absolute;
+@media (min-width: 768px) {
+  .site-header .navbar-nav .dropdown-menu {
     top: 100%;
     left: 0;
+    transform: none;
+    border: none;
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0 6px 24px rgba(0,0,0,0.10);
+    padding: 8px 0;
+    margin-top: 0;
+    min-width: 260px;
+    background: #fff;
+  }
+  .site-header .navbar-nav .dropdown-menu > li > a {
+    font-size: 14px;
+    font-weight: 400;
+    color: #2d3a4b;
+    letter-spacing: 0;
+    line-height: 1.4;
+    text-transform: none;
+    padding: 14px 28px;
+    border-bottom: 1px solid #ebebeb;
+    display: block;
+    transition: background 0.15s, color 0.15s;
+  }
+  .site-header .navbar-nav .dropdown-menu > li:last-child > a {
+    border-bottom: none;
+  }
+  .site-header .navbar-nav .dropdown-menu > li > a:hover {
+    background: #f4f6f9;
+    color: #111;
+  }
+}
+
+/* === MOBILE === */
+@media (max-width: 767px) {
+  body {
+    padding-top: 66px;
+  }
+
+  .site-header .container {
+    min-height: 58px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    flex-wrap: nowrap;
+  }
+
+  .site-header .logo {
+    margin-right: 0;
+    flex-grow: 1;
+  }
+  .site-header .logo img {
+    height: 44px;
+  }
+
+  .site-header .navbar {
+    flex-grow: 0;
+    flex-shrink: 0;
+  }
+
+  .site-header .navbar-header {
+    float: none;
+  }
+  .site-header .navbar-toggle {
+    display: block;
+    float: none;
+  }
+
+  .site-header .navbar-collapse {
+    position: fixed;
+    top: 58px;
+    left: 0;
     right: 0;
-    background: white;
-    border-bottom: 1px solid #e0e0e0;
+    background: #fff;
+    border-top: 1px solid #eee;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.10);
+    z-index: 9998;
+    max-height: calc(100vh - 58px);
+    overflow-y: auto;
+    padding: 0;
+  }
+
+  .site-header .navbar-nav {
+    margin: 0;
     width: 100%;
-    margin: 0 !important;
-    padding: 0 !important;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    float: none;
   }
-
-  .navbar-collapse.collapse.in,
-  .navbar-collapse:not(.collapse) {
-    display: flex !important;
-  }
-
-  .navbar-nav {
-    flex-direction: column;
-    width: 100%;
-    margin-left: 0 !important;
-    margin: 0 !important;
-  }
-
-  .navbar-nav > li {
+  .site-header .navbar-nav > li {
+    float: none;
     border-bottom: 1px solid #f0f0f0;
   }
-
-  .navbar-nav > li > a {
-    padding: 14px 18px;
-    border-radius: 0;
-    height: auto;
-  }
-
-  .navbar-nav > li > a::after {
-    display: none;
-  }
-
-  .navbar-nav > .dropdown .dropdown-menu {
-    position: static !important;
-    float: none !important;
-    width: 100% !important;
-    margin: 0 !important;
-    padding: 0 !important;
-    border: none !important;
-    background: #f9fafb !important;
-    display: none !important;
-    box-shadow: none !important;
-    animation: none !important;
-    margin-top: 0 !important;
-  }
-
-  .navbar-nav > .dropdown .dropdown-menu > li {
-    border-bottom: 1px solid #e8e8e8;
-  }
-
-  .navbar-nav > .dropdown .dropdown-menu > li > a {
-    padding: 12px 18px 12px 28px !important;
+  .site-header .navbar-nav > li > a {
+    padding: 14px 20px;
     font-size: 14px;
-    color: #444;
+    margin: 0;
+    text-transform: none;
+    letter-spacing: 0.4px;
+    font-weight: 600;
+    color: #333;
   }
 
-  .navbar-nav > .dropdown .dropdown-menu > li > a:hover {
-    background: #f0f0f0 !important;
-    padding-left: 28px !important;
+  .site-header .navbar-nav .dropdown-menu {
+    position: static;
+    float: none;
+    width: 100%;
+    box-shadow: none;
+    border: none;
+    border-radius: 0;
+    margin: 0;
+    padding: 0;
+    background: #f8f9fa;
   }
-
-  .navbar-nav > .dropdown:hover > .dropdown-menu {
-    display: block !important;
-  }
-
-  .caret {
-    margin-left: 4px;
+  .site-header .navbar-nav .dropdown-menu > li > a {
+    padding: 11px 20px 11px 36px;
+    font-size: 13px;
+    border-top: 1px solid #ececec;
   }
 }
 
 .sub-bnr p {
   color: #fff;
 }
-</style>
+
+

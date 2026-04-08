@@ -187,7 +187,7 @@ a:hover, a:focus {
 	transform: translate(-50%, -50%);
 }
 .font-playfair {
-	font-family: 'Playfair Display', serif;
+	font-family: 'Montserrat', sans-serif;
 }
 .font-montserrat {
 	font-family: 'Montserrat', sans-serif;
@@ -366,7 +366,7 @@ section {
 	line-height: 24px;
 	letter-spacing: 0.1px;
 	color: #666666;
-	font-family: 'Playfair Display', serif;
+	font-family: 'Montserrat', sans-serif;
 }
 .heading.light-head h3 {
 	color: #fff;
@@ -1172,7 +1172,7 @@ header .is-sticky .sticky .user-basket .dropdown-menu {
 	position: relative;
 }
 .simple-head h4 {
-	font-family: 'Playfair Display', serif;
+	font-family: 'Montserrat', sans-serif;
 	font-size: 28px;
 	color: #2d3a4b;
 	margin: 30px 0;
@@ -1325,7 +1325,7 @@ header .is-sticky .sticky .user-basket .dropdown-menu {
  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff', GradientType=0 ); /* IE6-9 */
 }
 .arrival-block .item-name p {
-	font-family: 'Playfair Display', serif;
+	font-family: 'Montserrat', sans-serif;
 	font-size: 14px;
 	margin: 0px;
 }
@@ -1406,7 +1406,7 @@ header .is-sticky .sticky .user-basket .dropdown-menu {
 	width: 100%;
 }
 .top-shop-feature p {
-	font-family: 'Playfair Display', serif;
+	font-family: 'Montserrat', sans-serif;
 }
 /*=======================================================
       NEW ARRIVAL LIST
@@ -1542,7 +1542,7 @@ header .is-sticky .sticky .user-basket .dropdown-menu {
 }
 .tooltip-inner {
 	padding: 4px 14px;
-	font-family: 'Playfair Display', serif;
+	font-family: 'Montserrat', sans-serif;
 }
 .tooltip.top .tooltip-arrow {
 	bottom: 1px;
@@ -1608,7 +1608,7 @@ header .is-sticky .sticky .user-basket .dropdown-menu {
 	z-index: 9;
 }
 .papular-block .item-name p {
-	font-family: 'Playfair Display', serif;
+	font-family: 'Montserrat', sans-serif;
 	font-size: 14px;
 	margin: 0px;
 	margin-top: 10px;
@@ -1727,7 +1727,7 @@ header .is-sticky .sticky .user-basket .dropdown-menu {
 	text-transform: uppercase;
 }
 .shop-items .item-name p {
-	font-family: 'Playfair Display', serif;
+	font-family: 'Montserrat', sans-serif;
 }
 .shop-items .price {
 	font-size: 18px;
@@ -1770,7 +1770,7 @@ header .is-sticky .sticky .user-basket .dropdown-menu {
 	transition: 0.4s ease-in-out;
 }
 .shop-detail p {
-	font-family: 'Playfair Display', serif;
+	font-family: 'Montserrat', sans-serif;
 }
 .shop-detail h4 {
 	color: #2d3a4b;
@@ -1878,7 +1878,7 @@ header .is-sticky .sticky .user-basket .dropdown-menu {
 }
 .item-decribe .tab-content p {
 	font-size: 13px;
-	font-family: 'Playfair Display', serif;
+	font-family: 'Montserrat', sans-serif;
 }
 .item-decribe .nav-tabs {
 	border: none;
@@ -2036,7 +2036,7 @@ header .is-sticky .sticky .user-basket .dropdown-menu {
 	letter-spacing: 2px;
 }
 .history-block p {
-	font-family: 'Playfair Display', serif;
+	font-family: 'Montserrat', sans-serif;
 }
 .vision-text h5 {
 	font-size: 20px;
@@ -2045,7 +2045,7 @@ header .is-sticky .sticky .user-basket .dropdown-menu {
 	letter-spacing: 2px;
 }
 .vision-text h2 {
-	font-family: 'Playfair Display', serif;
+	font-family: 'Montserrat', sans-serif;
 	font-size: 36px;
 	font-weight: normal;
 	text-transform: none;
@@ -2068,7 +2068,7 @@ header .is-sticky .sticky .user-basket .dropdown-menu {
 	text-align: center;
 }
 .cultur-block p {
-	font-family: 'Playfair Display', serif;
+	font-family: 'Montserrat', sans-serif;
 	color: #fff;
 }
 .cultur-block h4 {
@@ -2215,7 +2215,7 @@ header .is-sticky .sticky .user-basket .dropdown-menu {
 	background: #ffe115;
 }
 .blog-list article p {
-	font-family: 'Playfair Display', serif;
+	font-family: 'Montserrat', sans-serif;
 }
 .blog-list .post-tittle .tags {
 	font-weight: bold;
@@ -2355,7 +2355,7 @@ header .is-sticky .sticky .user-basket .dropdown-menu {
 .admin-info h6 span {
 	font-size: 12px;
 	text-transform: none;
-	font-family: 'Playfair Display', serif;
+	font-family: 'Montserrat', sans-serif;
 	margin-left: 30px;
 }
 /*=======================================================
@@ -2383,7 +2383,7 @@ header .is-sticky .sticky .user-basket .dropdown-menu {
 	padding: 0px;
 	margin: 0px;
 	border: none;
-	font-family: 'Playfair Display', serif;
+	font-family: 'Montserrat', sans-serif;
 	margin: 50px 0;
 	border-bottom: 1px solid rgba(0,0,0,0.1);
 	border-top: 1px solid rgba(0,0,0,0.1);
@@ -2461,7 +2461,7 @@ header .is-sticky .sticky .user-basket .dropdown-menu {
 	border-bottom: 1px solid #d1d5db;
 }
 .tweet p {
-	font-family: 'Playfair Display', serif;
+	font-family: 'Montserrat', sans-serif;
 }
 .tweet i {
 	font-size: 30px;
@@ -3057,14 +3057,14 @@ header .is-sticky .sticky .user-basket .dropdown-menu {
 }
 .knowledge-share .date .huge {
 	color: #2d3a4b;
-	line-height: 80px;
-	font-size: 80px;
+	line-height: 36px;
+	font-size: 36px;
 	display: inline-block;
 	width: 100%;
 	font-weight: bold;
 }
 .knowledge-share p {
-	font-family: 'Playfair Display', serif;
+	font-family: 'Montserrat', sans-serif;
 	max-width: 400px;
 }
 .knowledge-share a {
@@ -3263,7 +3263,7 @@ header .is-sticky .sticky .user-basket .dropdown-menu {
 	margin-top: 20px;
 }
 .testimonial p {
-	font-family: 'Playfair Display', serif;
+	font-family: 'Montserrat', sans-serif;
 	max-width: 400px;
 	margin-top: 40px;
 	color: #4d4d4d;
@@ -3364,7 +3364,7 @@ header .is-sticky .sticky .user-basket .dropdown-menu {
 	color: #ffe333;
 }
 .small-about p {
-	font-family: 'Playfair Display', serif;
+	font-family: 'Montserrat', sans-serif;
 	color: #4d4d4d;
 	font-size: 14px;
 	line-height: 20px;
@@ -3391,7 +3391,7 @@ header .is-sticky .sticky .user-basket .dropdown-menu {
 .sub-bnr p {
 	color: #666666;
 	letter-spacing: 0px;
-	font-family: 'Playfair Display', serif;
+	font-family: 'Montserrat', sans-serif;
 	font-size: 14px;
 	margin-top: 20px;
 	max-width: 590px;
@@ -4419,51 +4419,83 @@ main {
   margin: 0 auto 40px auto;
 }
 
-/* Logo Grid Container */
+/* Logo Grid Container - Horizontal Scroll Carousel */
 .logo-grid {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr); /* 6 logos per row */
-  gap: 30px;
-  justify-items: center;
+  display: flex;
+  gap: 40px;
+  padding: 20px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+  white-space: nowrap;
   align-items: center;
-  padding: 0 20px;
 }
 
 /* Logo Items */
+.logo-item {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 200px;
+  height: 120px;
+}
+
 .logo-item img {
   width: 100%;
-  max-width: 120px;
-  aspect-ratio: 1 / 1; /* Keeps image square */
+  max-width: 180px;
+  height: auto;
   object-fit: contain;
   transition: transform 0.3s ease;
 }
 
 .logo-item img:hover {
-  transform: scale(1.05);
+  transform: scale(1.1);
 }
 
-/* Responsive for tablets: still 6 per row, just smaller */
+/* Hide scrollbar */
+.logo-grid::-webkit-scrollbar {
+  display: none;
+}
+
+/* Responsive for tablets */
 @media (max-width: 991px) {
   .logo-grid {
-    grid-template-columns: repeat(6, 1fr);
-    gap: 20px;
+    gap: 30px;
+  }
+  .logo-item {
+    min-width: 150px;
+    height: 100px;
   }
   .logo-item img {
-    max-width: 90px;
+    max-width: 150px;
   }
 }
 
-/* Responsive for small screens: stack in 3 per row */
+/* Responsive for small screens */
 @media (max-width: 768px) {
   .logo-grid {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 15px;
+    gap: 20px;
+  }
+  .logo-item {
+    min-width: 120px;
+    height: 80px;
+  }
+  .logo-item img {
+    max-width: 120px;
   }
 }
 
-/* Responsive for phones: stack in 2 per row */
+/* Responsive for phones */
 @media (max-width: 480px) {
   .logo-grid {
-    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+  .logo-item {
+    min-width: 100px;
+    height: 70px;
+  }
+  .logo-item img {
+    max-width: 100px;
   }
 }
